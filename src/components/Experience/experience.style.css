@@ -1,0 +1,56 @@
+.exp-detail {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    column-gap: 40px;
+}
+
+.company {
+    padding: 0 20px;
+}
+
+.position{
+    margin-bottom: 15px;
+}
+
+.status {
+    margin-top: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.exp-para {
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.stepper {
+    position: relative;
+    padding:  40px 0;
+    margin: 20px 0;
+    width: 1px;
+    background-color: aliceblue;
+    margin-left: 40px;
+}
+
+.stepper::before, .stepper::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: lavender;
+}
+
+.stepper::before {
+    left: -2px;
+    top: 0; /* adjust as needed */
+
+}
+
+.stepper::after {
+    right: -2px;
+    bottom: 0;
+}
