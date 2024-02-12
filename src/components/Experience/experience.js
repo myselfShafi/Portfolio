@@ -1,4 +1,5 @@
 import React from "react";
+import { MainContainer } from "../Common/Main-container/MainContainer";
 import "./experience.style.css";
 
 export const Experience = () => {
@@ -42,8 +43,8 @@ export const Experience = () => {
   ];
 
   return (
-    <div id="resume" className="main-container flex-div">
-      <h1 className="ask mb auto-m" children={"My Experience."} />
+    <MainContainer id="resume" className="flex-div">
+      <h1 className="ask mb auto-m" children={"Experience."} />
       {experience.reverse().map((data, index) => {
         return (
           <div key={data.id}>
@@ -62,6 +63,6 @@ export const Experience = () => {
           </div>
         );
       })}
-    </div>
+    </MainContainer>
   );
 };

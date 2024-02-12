@@ -1,0 +1,16 @@
+.main-container {
+    padding: 0 15% 5%;
+    border-bottom: 1px dashed rgb(129, 104, 157, .5);
+  }
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 2% 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding:  5% 2%;
+    }
+}

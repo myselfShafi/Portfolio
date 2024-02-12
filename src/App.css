@@ -22,38 +22,67 @@ html {
   scroll-behavior: smooth;
 }
 
+/* h1 {
+  font-size: 5rem;
+  font-weight: 800;  
+} */
+
 .App {
   display: block;
   width: 100%;
   height: 100vh;
 }
-
-.main-container {
-  margin: 0 15%;
-  padding: 5% 0;
-  border-bottom: 1px dashed rgb(129, 104, 157, .5);
+/* 
+h2 {
+  font-size: initial;
 }
+
+p {
+  font-size: 1.2rem;
+} */
 
 .ask {
   font-size: 40px;
   font-weight: 800;
 }
 
-.auto-m {
+/* .auto-m {
   margin: 0 auto;
-}
+} */
 
 .mb {
-  margin-bottom: 80px;
+  margin:  4rem auto;
 }
 
 .flex-div {
   display: flex;
   flex-direction: column;
+  
 }
 
 .grid-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 15%;
+}
+
+/* .cap-bold {
+  text-transform: uppercase;
+}  */
+
+.white {
+  color: aliceblue;
+}
+
+
+@media (max-width: 480px) {
+ html {
+  font-size: 55%;
+ }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+   }
 }

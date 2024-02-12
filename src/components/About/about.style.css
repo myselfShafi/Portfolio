@@ -1,10 +1,27 @@
-
-
-
-
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5%;
 }
 
+
+@media (max-width: 480px) {
+    .about-container {
+        grid-template-columns: unset !important;
+        grid-template-rows: 1fr 1fr 1fr; 
+        padding: 0 5% ;
+        column-gap: unset;
+        row-gap: 2rem;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        padding: 0 2% ;
+        row-gap: 2rem;
+
+    }
+}

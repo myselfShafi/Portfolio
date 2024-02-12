@@ -1,5 +1,6 @@
 import React from "react";
 import { PiDevicesBold, PiTelevisionSimpleBold } from "react-icons/pi";
+import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Card } from "../Shared/Card/card";
 import "./about.style.css";
 
@@ -7,23 +8,28 @@ export const About = () => {
   const about = [
     {
       id: 1,
-      icon: <PiDevicesBold size={"60px"} />,
+      icon: <PiDevicesBold size={"3.5rem"} />,
       title: "Web Design",
       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
     },
     {
       id: 2,
-      icon: <PiTelevisionSimpleBold size={"60px"} />,
+      icon: <PiTelevisionSimpleBold size={"3.5rem"} />,
       title: "App Development",
       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
     },
-    { id: 3, icon: "", title: "", info: "" },
+    {
+      id: 3,
+      icon: <PiTelevisionSimpleBold size={"3.5rem"} />,
+      title: "App Development",
+      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
+    },
   ];
 
   return (
-    <section id="about" className="main-container flex-div">
+    <MainContainer id="about" className="flex-div">
       <h1 className="ask mb auto-m" children={"What I do?"} />
-      <div className="about-container">
+      <section className="about-container">
         {about.map((data) => {
           return (
             <div key={data.id}>
@@ -31,7 +37,7 @@ export const About = () => {
             </div>
           );
         })}
-      </div>
-    </section>
+      </section>
+    </MainContainer>
   );
 };

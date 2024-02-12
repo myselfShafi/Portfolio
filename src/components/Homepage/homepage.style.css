@@ -1,19 +1,18 @@
 .homepage {
-    padding: 0 15% ; 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    height: calc(100vh - 120px);
-        overflow-y: hidden;
-        border-bottom:1px solid rgb(129, 104, 157, .5);
-
+  position: relative;
+  padding: 0 15% ; 
+  height: calc(100vh - 6rem);
+  border-bottom:1px solid rgb(129, 104, 157, .5);
+  overflow: hidden;
 }
 
 .container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: .5rem;
+  font-size: 2rem;
 }
 
 .wave {
@@ -32,20 +31,18 @@
     50% {
       transform: rotate(-20deg);
     }
-  }
-
-.cap-bold {
-  text-transform: uppercase;
-}  
-
-.name {
-  font-size: 80px;
-  font-weight: 800;  
-
 }
 
+.header {
+  font-size: 2rem;
+}
+
+.name {
+  font-size: 5rem;
+  }
+
 .title {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 600;
   color: aliceblue;  
   opacity: 80%;
@@ -74,14 +71,44 @@
 }
 
 .para {
-  font-size: 20px;
+  font-size: 1.25rem;
+  max-width: 40rem;
 }
 
-
+.cv {
+  margin-top: 1rem;
+}
 
 .dp-img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  transform: translateX(150px);
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  object-fit: cover;
 }
+
+@media (max-width: 480px) {
+  .homepage {
+    padding: 5% !important;
+    height: auto;
+  }
+  .container {
+    height: 70vh;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    padding: 10%;
+  }
+  .dp-img {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    top: unset;
+  }
+  
+}
+
