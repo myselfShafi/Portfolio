@@ -1,4 +1,5 @@
 import React from "react";
+import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./eduSkill.style.css";
 
@@ -31,7 +32,7 @@ export const EduSkill = () => {
     { id: 1, skill: "HTML5 & CSS", value: "90" },
   ];
   return (
-    <div id="resume" className="main-container flex-div">
+    <MainContainer id="resume" className="flex-div">
       <h1 className="ask mb auto-m" children={"Education & Skills."} />
       <section className="grid-section">
         <div className="education">
@@ -66,6 +67,6 @@ export const EduSkill = () => {
           })}
         </div>
       </section>
-    </div>
+    </MainContainer>
   );
 };

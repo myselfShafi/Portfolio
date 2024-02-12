@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import "./App.css";
 import { About } from "./components/About/about";
-// import { Contact } from "./components/Contact/contact";
+import { Contact } from "./components/Contact/contact";
 import { EduSkill } from "./components/EduSkill/EduSkill";
 import { Experience } from "./components/Experience/experience";
-// import { Footer } from "./components/Footer/footer";
+import { Footer } from "./components/Footer/footer";
 import { Homepage } from "./components/Homepage/homepage";
 import Navbar from "./components/Navbar/navbar";
 import Sidebar from "./components/Sidebar/sidebar";
@@ -28,8 +28,8 @@ function App() {
       <About />
       <Experience />
       <EduSkill />
-      {/*<Contact />
-      <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

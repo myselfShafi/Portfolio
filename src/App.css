@@ -16,6 +16,7 @@ body {
   position: relative;
   font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  line-height: 1.5;
 }
 
 html {
@@ -46,12 +47,12 @@ p {
   font-weight: 800;
 }
 
-/* .auto-m {
+.auto-m {
   margin: 0 auto;
-} */
+}
 
 .mb {
-  margin:  4rem auto;
+  margin:  0 auto 3rem;
 }
 
 .flex-div {
@@ -77,12 +78,16 @@ p {
 
 @media (max-width: 480px) {
  html {
-  font-size: 55%;
+  font-size: 85%;
  }
+ .grid-section {
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+}
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
    }
 }

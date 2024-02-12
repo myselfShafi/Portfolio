@@ -3,6 +3,7 @@ import { BsMailbox2Flag } from "react-icons/bs";
 import { CiMobile3 } from "react-icons/ci";
 import { GrSend } from "react-icons/gr";
 import { IoMailOpenOutline } from "react-icons/io5";
+import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./contact.style.css";
 
@@ -25,12 +26,12 @@ export const Contact = () => {
     },
   ];
   return (
-    <div id="contact-me" className="main-container flex-div">
+    <MainContainer id="contact-me" className="flex-div">
       <h1
         className="connect auto-m"
-        children="Let's connect and share our stories."
+        children="Let's connect & share our stories."
       />
-      <h1 className="ask touch auto-m" children={"Get in touch!"} />
+      <h1 className="ask white mb auto-m" children={"Get in touch!"} />
 
       <section className="contact-section">
         <div className="contact-details">
@@ -68,6 +69,6 @@ export const Contact = () => {
           </form>
         </div>
       </section>
-    </div>
+    </MainContainer>
   );
 };

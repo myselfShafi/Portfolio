@@ -16,21 +16,14 @@
 }
 
 .connect {
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 800;
-}
-
-.touch {
-    font-weight: 700;
-    color: aliceblue;
-    margin-bottom: 20px;
 }
 
 .tag {
     font-size: 20px;
-    margin: 0 30px;
+    margin:  1.5rem;
 }
-
 
 .outline{
     width: 4.2rem;
@@ -80,4 +73,16 @@ input#subject, textarea#comment {
 
 textarea {
     resize: none;
+}
+
+@media (max-width: 1600px) {
+    .contact-section {
+    flex-direction: column;
+    }
+    form {
+        grid-template-columns: 1fr;       
+    }
+    input#subject, textarea#comment {
+        grid-column: unset
+    }
 }
