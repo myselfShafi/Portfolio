@@ -1,9 +1,13 @@
 import React from "react";
+import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./eduSkill.style.css";
 
 export const EduSkill = () => {
+  useIntersectObserver("education", "v-animate");
+  useIntersectObserver("skills", "h-animate");
+
   const education = [
     {
       id: 1,

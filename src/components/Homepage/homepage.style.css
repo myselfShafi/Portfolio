@@ -55,7 +55,7 @@
   font-weight: 600;
   color: aliceblue;
   opacity: 0;  
-  animation: vertical .6s .3s ease-out forwards, slide-in 6s 2s infinite;
+  animation: vertical .6s .3s ease-out forwards, slide-in 9s 2s infinite;
 }
 
 @keyframes slide-in {

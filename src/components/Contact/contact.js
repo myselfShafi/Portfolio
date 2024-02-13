@@ -3,11 +3,15 @@ import { BsMailbox2Flag } from "react-icons/bs";
 import { CiMobile3 } from "react-icons/ci";
 import { GrSend } from "react-icons/gr";
 import { IoMailOpenOutline } from "react-icons/io5";
+import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./contact.style.css";
 
 export const Contact = () => {
+  useIntersectObserver("contact-details", "h-animate");
+  useIntersectObserver("contact-form", "h-animate");
+
   const contacts = [
     {
       id: 1,

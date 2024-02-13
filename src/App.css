@@ -114,7 +114,8 @@ opacity: 0;
 .h-animate {
   animation: horizontal .6s ease-out forwards;  
   opacity: 0;
-  }
+  
+}
 
 
 @keyframes horizontal {
@@ -125,7 +126,11 @@ opacity: 0;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     filter: blur(0);
   }
+}
+
+.hidden {
+  visibility: hidden;
 }

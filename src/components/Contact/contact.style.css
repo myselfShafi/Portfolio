@@ -13,6 +13,7 @@
 .contact-form {
     flex: 1.5;
     padding: 0 20px;
+    animation-delay: .4s;
 }
 
 .connect {

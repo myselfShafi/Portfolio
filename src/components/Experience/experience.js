@@ -1,8 +1,10 @@
 import React from "react";
+import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import "./experience.style.css";
 
 export const Experience = () => {
+  useIntersectObserver("exp-detail", "v-animate");
   const experience = [
     {
       id: 1,
@@ -47,20 +49,18 @@ export const Experience = () => {
       <h1 className="ask mb auto-m" children={"Experience."} />
       {experience.reverse().map((data, index) => {
         return (
-          <div key={data.id}>
-            <section className="exp-detail">
-              <div className="company">
-                <h1 className="position" children={data.position} />
-                <p className="" children={data.duration} />
-                <div children={data.status} className="status" />
-                {experience.length - 1 !== index && <div className="stepper" />}
-              </div>
-              <div className="company">
-                <h1 className="position" children={data.companyName} />
-                <p className="exp-para" children={data.workInfo} />
-              </div>
-            </section>
-          </div>
+          <section key={data.id} className="exp-detail">
+            <div className="company">
+              <h1 className="position" children={data.position} />
+              <p className="" children={data.duration} />
+              <div children={data.status} className="status" />
+              {experience.length - 1 !== index && <div className="stepper" />}
+            </div>
+            <div className="company">
+              <h1 className="position" children={data.companyName} />
+              <p className="exp-para" children={data.workInfo} />
+            </div>
+          </section>
         );
       })}
     </MainContainer>
