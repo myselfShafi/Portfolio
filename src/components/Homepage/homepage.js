@@ -8,23 +8,29 @@ import "./homepage.style.css";
 const description = ` I specialize in translating designs into responsive, user-friendly websites. Let's collaborate and turn your digital vision into reality!`;
 
 export const Homepage = () => {
+  const titles = ["Frontend Developer", "Web Designer", "Coder"];
+
   return (
     <MainContainer className="homepage">
-      <header className="container">
-        <h2 className="header">
+      <header className="container ">
+        <h2 className="header v-animate">
           Oh, hello there!
           <span children={" 👋"} className="wave" />
         </h2>
-        <h1 className="name cap-bold">
+        <h1 className="name v-animate cap-bold">
           I'm <span children={"Shafi"} className="white" />
         </h1>
-        <h2 children="Frontend Developer" className="title cap-bold" />
-        <p children={description} className="para" />
+        <div className="title-div">
+          {titles.map((tag, index) => {
+            return <h2 key={index} children={tag} className={"title"} />;
+          })}
+        </div>
+        <p children={description} className="para v-animate" />
         <Button
           children={"Download CV"}
           icon={<FaDownload />}
           onClick={() => alert("afgs")}
-          className={"cv"}
+          className={"cv v-animate"}
         />
       </header>
       <img alt="profile-img" src={profileDp} className="dp-img" />
