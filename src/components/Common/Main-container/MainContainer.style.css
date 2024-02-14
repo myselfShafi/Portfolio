@@ -1,7 +1,17 @@
 .main-container {
-    padding: 5% 15%;
-    border-bottom: 1px dashed rgb(129, 104, 157, .5);
+    padding: 5% 15%;    
   }
+
+  .seperator {
+    background-image: url(../../../assests/images/bline.png);
+    background-repeat: repeat-x;
+    background-position: 50% ;
+    background-size: auto .5rem;
+    padding: 1rem;
+    margin: 0 15%;
+    filter: invert(1)
+  }
+
 
 @media (max-width: 480px) {
     .main-container {
@@ -12,5 +22,8 @@
 @media (max-width: 768px) {
     .main-container {
         padding:  5% 2%;
+    }
+    .seperator {
+        margin: 0 5%;
     }
 }

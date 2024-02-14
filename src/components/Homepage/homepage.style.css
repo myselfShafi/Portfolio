@@ -48,6 +48,7 @@
   position: relative;
   height: 5rem;
   overflow: hidden;
+  text-wrap: nowrap;
 }
 
 .title {

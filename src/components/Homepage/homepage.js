@@ -11,7 +11,7 @@ export const Homepage = () => {
   const titles = ["Frontend Developer", "Web Designer", "Coder"];
 
   return (
-    <MainContainer className="homepage">
+    <MainContainer className="homepage" noBorder={true}>
       <header className="container ">
         <h2 className="header v-animate">
           Oh, hello there!

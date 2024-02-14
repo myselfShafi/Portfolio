@@ -30,7 +30,7 @@ export const Contact = () => {
     },
   ];
   return (
-    <MainContainer id="contact-me" className="flex-div">
+    <MainContainer id="contact-me" className="flex-div" noBorder={true}>
       <h1
         className="connect auto-m"
         children="Let's connect & share our stories."
