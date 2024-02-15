@@ -1,7 +1,7 @@
 [data-theme='dark'] {
     --bg-main : #1A1A1D;
 
-    --color-main: #ffff;
+    --color-main: #F5F5F5;
 
     --sub-title: #4E4E50;
 
@@ -13,8 +13,8 @@
     --sidebar-v-line: rgb(104, 208, 245);
     --sidebar-theme-color: aliceblue;
 
-    --homepage-name: #4623c6;
-    --homepage-para: #4E4E50;
+    --homepage-name: #96EFFF;
+    --homepage-para: #EBFFFB;
     
     --about-bg: #424242;
     --about-text: #f6f6f6;
@@ -38,10 +38,10 @@
     --contact-input-border-focus: #c2edce;
     --contact-input-text: rgb(56, 127, 133);
 
-    --button-bg: #35c3f3;
-    --button-text: aliceblue;
+    --button-bg: #E5CFF7;
+    --button-text: #49108B;
 
-    --footer-bg: #4E4E50;
+    --footer-bg: #2B2024;
     --footer-text: #f6f6f2;
     --footer-icon: aliceblue;
     --footer-icon-hover: aliceblue;

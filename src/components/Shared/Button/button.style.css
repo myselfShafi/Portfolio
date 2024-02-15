@@ -1,6 +1,6 @@
 .btn-cv {
     padding: .8rem 1.2rem;
-    border-radius: .6rem;
+    border-radius: .3rem;
     max-width:fit-content;
     font-size: 1.2rem;
     font-weight: 600;
@@ -11,6 +11,14 @@
     cursor: pointer;
     background-color: var(--button-bg);
     color: var(--button-text);
+    transition: all 1s ease;
+
+  }
+
+  .btn-cv:hover {
+    color: var(--button-bg);
+    background-color: transparent;
+    outline: 2px solid var(--button-bg);
   }
 
   

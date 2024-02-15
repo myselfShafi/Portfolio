@@ -1,6 +1,5 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
-import profileDp from "../../assests/images/dp.png";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./homepage.style.css";
@@ -33,7 +32,7 @@ export const Homepage = () => {
           className={"cv v-animate"}
         />
       </header>
-      <img alt="profile-img" src={profileDp} className="dp-img" />
+      <div className="wave-bg" />
     </MainContainer>
   );
 };

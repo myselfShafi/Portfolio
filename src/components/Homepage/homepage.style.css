@@ -2,7 +2,6 @@
   position: relative;
   padding: 0 15% ; 
   height: calc(100vh - 6rem);
-  /* border-bottom:1px solid rgb(129, 104, 157, .5); */
   overflow: hidden;
 }
 
@@ -46,6 +45,7 @@
 
 .name span {
   color: var(--homepage-name);
+  letter-spacing: 2px;
 }
 
 .title-div {
@@ -98,13 +98,43 @@
   animation-delay: 0.5s;
 }
 
-.dp-img {
+.wave-bg {
+  background: url('../../assests/images/dp.png'),  var(--title-gradient);
+  width: 30rem;
+  height: 32rem;
+  border-radius: 45% 58% 26% 53% / 55% 21% 39% 54% ;
   position: absolute;
   z-index: -2;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  object-fit: cover;
+  top: calc(25vh - 6rem);
+  right: 25vh;
+  background-repeat: no-repeat;
+  background-position: 100% -50%;
+  animation: wave-effect 15s  ease-in-out infinite;
+}
+
+@keyframes wave-effect {
+  0%, 100% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  20% {
+    border-radius: 40% 60% 70% 30% / 50% 50% 50% 50%;
+    transform: translate(1rem,1rem);
+  }
+  40% {
+    border-radius: 60% 40% 50% 70% / 50% 50% 50% 50%;
+    transform: translate(-1rem,1rem);
+
+  }
+  60% {
+    border-radius: 30% 70% 40% 60% / 50% 50% 50% 50%;
+    transform: translate(1rem,-1rem);
+
+  }
+  80% {
+    border-radius: 70% 30% 60% 40% / 50% 50% 50% 50%;
+    transform: translate(-1rem,-1rem);
+
+  }
 }
 
 @media (max-width: 480px) {
@@ -122,11 +152,10 @@
   .homepage {
     padding: 10%;
   }
-  .dp-img {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    top: unset;
+  .wave-bg {
+    top: 10%; 
+    right: 10%;
+    background-position: right;
   }
   
 }

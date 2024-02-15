@@ -15,10 +15,11 @@
 }
 
 .head-tag {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
     text-wrap: nowrap;
+    font-weight: 500;
 }
 
 @media (max-width : 850px) {
