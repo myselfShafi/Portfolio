@@ -9,7 +9,13 @@
     background-size: auto .5rem;
     padding: 1rem;
     margin: 0 15%;
-    filter: invert(1)
+    filter: invert(1);
+  }
+
+  [data-theme='light'] {
+    .seperator {
+        filter: unset;
+    }
   }
 
 

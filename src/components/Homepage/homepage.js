@@ -18,7 +18,7 @@ export const Homepage = () => {
           <span children={" 👋"} className="wave" />
         </h2>
         <h1 className="name v-animate cap-bold">
-          I'm <span children={"Shafi"} className="white" />
+          I'm <span children={"Shafi"} />
         </h1>
         <div className="title-div">
           {titles.map((tag, index) => {

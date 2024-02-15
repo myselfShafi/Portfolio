@@ -1,50 +1,32 @@
-@import url(./themes/color-palette.css);
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body.dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-body.light {
-  background-color: var(--bg-light);
-  color: var(--text-light);
-  transition: background-color 0.3s, color 0.3s;
-}
+@import url(./themes/dark-palette.css);
+@import url(./themes/light-palette.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
 body {
   position: relative;
-  font-family: 'Montserrat','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
   line-height: 1.5;
+  background-color: var(--bg-main);
+  color: var(--color-main);
+  transition: all .3s ease-in-out;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* h1 {
-  font-size: 5rem;
-  font-weight: 800;  
-} */
-
 .App {
   display: block;
   width: 100%;
   height: 100vh;
 }
-/* 
-h2 {
-  font-size: initial;
-}
-
-p {
-  font-size: 1.2rem;
-} */
 
 .ask {
   font-size: 40px;
   font-weight: 800;
+  color: var(--sub-title);
 }
 
 .auto-m {

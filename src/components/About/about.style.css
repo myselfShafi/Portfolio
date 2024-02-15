@@ -5,6 +5,7 @@
 }
 
 
+
 @media (max-width: 480px) {
     .about-container {
         grid-template-columns: unset !important;

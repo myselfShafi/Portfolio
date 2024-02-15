@@ -33,16 +33,16 @@
 progress {
     width: 100%;
     height: 10px;
-    accent-color: #009edd;
-    background-color: aliceblue;
+    accent-color: var(--eduskill-bar-color);
+    background-color: var(--eduskill-bar-bg);
 }
 
 progress::-webkit-progress-bar {
-    background-color: aliceblue;
+    background-color: var(--eduskill-bar-bg)
 }
 
 progress::-webkit-progress-value {
-    background-color: #009edd;
+    background-color: var(--eduskill-bar-color)
 }
 
 @media (max-width: 480px) {

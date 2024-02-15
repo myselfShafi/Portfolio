@@ -35,7 +35,7 @@ export const Contact = () => {
         className="connect auto-m"
         children="Let's connect & share our stories."
       />
-      <h1 className="ask white mb auto-m" children={"Get in touch!"} />
+      <h1 className="ask mb auto-m touch" children={"Get in touch!"} />
 
       <section className="contact-section">
         <div className="contact-details">

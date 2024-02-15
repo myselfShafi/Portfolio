@@ -1,30 +1,49 @@
 .sbar-body {
-    width: 6rem;
+    width: 10rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #160F30;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     transition: box-shadow ease-in .2s;
-    border: 1px solid rgb(129, 104, 157, .5);
+    border: 1px solid var(--sidebar-border);
     border-left: 0;
     z-index: 10;
+    background: var(--sidebar-bg);
 }
 
 .logo-img {
     width: 100%;
     height: auto;
     display: block;
-    background-color: blueviolet;
+    display: flex; 
+    justify-content: center;
+    padding: 1.5rem 1rem; 
+color: var(--sidebar-brand);
+gap: 10px;
 }
 
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: #81689D;
+.logo-img h1 {
+letter-spacing: 2px;
+font-family: "Merienda", cursive;
+text-decoration: overline;
+}
+
+.theme-mode {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--sidebar-theme-color);
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus {
+        border: 3px dashed #FFA364;
+    }
 }
 
 .sbar-icon-div {
@@ -37,16 +56,40 @@
 }
 
 .sbar-icon {
-color: aliceblue;
-transition: color ease-in-out .2s;
+    color: var(--sidebar-icon);
 &:hover {
-    color: #81689D
+    color: var(--sidebar-icon-hover);
 }
 }
-
 
 @media (max-width: 850px) {
     .sbar-body {
         display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sbar-body {
+        width: 6rem;
+    }
+}
+
+.line {
+    position: absolute;
+    width: .3rem;
+    height: 100vh;
+    background-color: var(--sidebar-v-line);
+    animation: scaling 1s ease;
+    transform-origin: top;
+    animation-timeline: scroll();
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(1,0); 
+    }
+    to {
+        transform: scale(1,1);
+ 
     }
 }

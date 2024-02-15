@@ -14,7 +14,7 @@
 
 .status {
     margin-top: 10px;
-    background-color: aliceblue;
+    background-color: var(--exp-status-bg);
     border-radius: 5px;
     padding: 8px 10px;
     width: fit-content;
@@ -31,7 +31,7 @@
     padding:  40px 0;
     margin: 20px 0;
     width: 1px;
-    background-color: aliceblue;
+    background-color: var(--exp-stepper-bg);
     margin-left: 40px;
 }
 
@@ -41,12 +41,12 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: lavender;
+    background-color: var(--exp-stepper-tip)
 }
 
 .stepper::before {
     left: -2px;
-    top: 0; /* adjust as needed */
+    top: 0; 
 
 }
 

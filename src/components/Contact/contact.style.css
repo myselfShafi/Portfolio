@@ -21,6 +21,10 @@
     font-weight: 800;
 }
 
+.touch {
+    color: var(--contact-header-text);
+}
+
 .tag {
     font-size: 20px;
     margin:  1.5rem;
@@ -29,18 +33,19 @@
 .outline{
     width: 4.2rem;
     height: 4.2rem;
-    border: 3px solid aliceblue;
+    border: 3px solid var(--contact-icon-border);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0 2rem;
-    transition: background-color, border-color .5s ease-in;
+    transition: background-color .5s ease-in-out, border-color .5s ease-in-out;
 
     &:hover{
-        background-color: aliceblue;
-        border-color: yellowgreen;
+        background-color: var(--contact-icon-bg-hover);
+        border-color: var(--contact-icon-border-hover)
     }
+    
 }
 
 .contact-info {
@@ -61,11 +66,14 @@ form {
 }
 
 input, textarea {
-    background-color: transparent;
-    border: .5px solid rgba(240, 248, 255, 0.553);
+    background-color: var(--contact-input-bg);
+    border: .5px solid var(--contact-input-border);
     font-size: 18px;
     padding: 15px;
-    color: aliceblue;
+    color: var(--contact-input-text);
+    &:focus {
+        outline-color: var(--contact-input-border-focus);
+    }
 }
 
 input#subject, textarea#comment {
