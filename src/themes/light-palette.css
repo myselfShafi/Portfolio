@@ -22,6 +22,8 @@
     --exp-status-bg: rgb(59, 59, 107);
     --exp-stepper-bg: rgb(13, 55, 91);
     --exp-stepper-tip: rgb(165, 174, 182);
+    --exp-bg-hover: #18191c;
+
 
     --eduskill-bar-color: rgb(235, 81, 181);
     --eduskill-bar-bg: rgb(240, 239, 239);
@@ -44,7 +46,10 @@
     --footer-icon: #f6f6f2;
     --footer-icon-hover: rgb(2, 20, 36);
 
-    --title-gradient: linear-gradient(20deg,blue,aqua, purple);
+    --theme-icon-outline: #FFA364;
+
+    --title-gradient: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
+    --purple-gradient: linear-gradient(20deg,#6F2232, #950740, #C3073F);
    
 
 }

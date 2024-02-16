@@ -1,16 +1,18 @@
 .main-card {
     background-color: var(--about-bg);
     width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+    border-radius: 8px;
    height: 100%;
    display: flex;
+   padding: 2rem ;
+   flex-direction: column;
    justify-content: center;
+   align-items: center;
    position: relative;
 
 }
 
-.main-card::before {
+/* .main-card::before {
     content: '';
 position: absolute;
 top: 0;
@@ -28,21 +30,39 @@ background-color: aliceblue;
     transform: scale(1,1);
     background-color: antiquewhite;
     border-bottom-right-radius: 50%;
-}
+} */
 
 .icon-card {
-    background-color: var(--about-icon-bg);
+    display: inline-flex;
+    width: fit-content;
+    background: var(--title-gradient);
     color: var(--about-icon-color);
-    padding: 1rem 1.5rem 1rem 1rem;
-    border-radius: 0 1% 90% 1% ; 
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 0 50% 50%;
+    transition: all .5s ease;
+}
+
+.main-card:hover {
+    box-shadow: rgba(62, 62, 74, 0.2) 0px 8px 19px 10px;
+    .icon-card {
+        border-radius: 0 50% 50% 50%;
+        transform: translateX(-1rem);
+    }
 }
 
 
 .card-detail {
-    margin: 30px;
     color: var(--about-text);
-    z-index: 4;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .card-detail h1 {
-    margin-bottom: 1rem;
+    color: var(--color-main);
+    font-size: 1.8rem;
+    margin: 1rem 0;
 }

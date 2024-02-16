@@ -1,5 +1,5 @@
 [data-theme='dark'] {
-    --bg-main : #1A1A1D;
+    --bg-main : #212529;
 
     --color-main: #F5F5F5;
 
@@ -16,8 +16,8 @@
     --homepage-name: #96EFFF;
     --homepage-para: #EBFFFB;
     
-    --about-bg: #424242;
-    --about-text: #f6f6f6;
+    --about-bg: #18191c;
+    --about-text: #AAAAAA;
     --about-icon-bg: #8f27bf;
     --about-icon-color: #f6f6f6;
 
@@ -25,6 +25,7 @@
     --exp-status-bg: #6F2232;
     --exp-stepper-bg: aliceblue;
     --exp-stepper-tip: #C3073F;
+    --exp-bg-hover: #18191c;
 
     --eduskill-bar-color: rgb(92, 92, 215);
     --eduskill-bar-bg: rgb(200, 216, 218);
@@ -46,5 +47,9 @@
     --footer-icon: aliceblue;
     --footer-icon-hover: aliceblue;
 
+    --theme-icon-outline: #FFA364;
+
     --title-gradient: linear-gradient(20deg,#6F2232, #950740, #C3073F);
+    --purple-gradient: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
+
 }

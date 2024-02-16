@@ -41,9 +41,12 @@ text-decoration: overline;
     display: flex;
     justify-content: center;
     align-items: center;
-    &:focus {
-        border: 3px dashed #FFA364;
-    }
+}
+
+.theme-mode.active {
+    border: 3px dashed var(--theme-icon-outline);
+    transform: rotateZ(360deg);
+    transition: transform 1s ease-out ;
 }
 
 .sbar-icon-div {

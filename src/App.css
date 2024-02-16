@@ -15,6 +15,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  font-size: 110%;
 }
 
 .App {
@@ -27,6 +28,34 @@ html {
   font-size: 40px;
   font-weight: 800;
   color: var(--sub-title);
+  position: relative;
+}
+
+.ask::before {
+content: '';
+position: absolute;
+left: 0;
+width: 3.5rem;
+height: 3.5rem;
+z-index: -1;
+border-radius: 50%;
+opacity: .6;
+background: var(--purple-gradient);
+animation: blob 6s ease infinite;
+}
+
+@keyframes blob {  
+  0%, 100% {transform: translate(0)}
+  20% {transform: translate(5px,5px);}
+  40% {transform: translate(-5px,5px);}
+  60% {transform: translate(5px,-5px);}
+  80% {transform: translate(-5px,-5px);}
+}
+
+@media (max-width:990px) {
+  .ask::before{
+    top: 10px
+  }
 }
 
 .auto-m {
@@ -48,15 +77,6 @@ html {
   grid-template-columns: 1fr 1fr;
   column-gap: 15%;
 }
-
-/* .cap-bold {
-  text-transform: uppercase;
-}  */
-
-.white {
-  color: aliceblue;
-}
-
 
 @media (max-width: 480px) {
  html {

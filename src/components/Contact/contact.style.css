@@ -21,10 +21,6 @@
     font-weight: 800;
 }
 
-.touch {
-    color: var(--contact-header-text);
-}
-
 .tag {
     font-size: 20px;
     margin:  1.5rem;
@@ -56,6 +52,8 @@
 
 .contact-para {
     max-width: 60%;
+    color: var(--about-text);
+
 }
 
 form {

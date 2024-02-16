@@ -11,7 +11,7 @@ import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./sidebar.style.css";
 
 const Sidebar = () => {
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   const icons = [
     {
       id: 1,
@@ -45,7 +45,7 @@ const Sidebar = () => {
     },
   ];
 
-  const theme = [
+  const themes = [
     { id: 1, class: "light", icon: <ImSun size={"20px"} /> },
     { id: 2, class: "dark", icon: <BsMoonStarsFill size={"20px"} /> },
   ];
@@ -71,12 +71,12 @@ const Sidebar = () => {
         })}
       </div>
       <div className="logo-img">
-        {theme.map((value) => {
+        {themes.map((value) => {
           return (
             <button
               key={value.id}
               type="button"
-              className={`theme-mode `}
+              className={`theme-mode ${theme === value.class && "active"}`}
               onClick={() => toggleTheme(value.class)}
               children={value.icon}
             />
