@@ -24,6 +24,39 @@ html {
   height: 100vh;
 }
 
+.App::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 150%;
+  z-index: -5;
+  background-color: transparent;
+  transform-origin: right top;
+  animation: bubble 4s ease-out forwards, wobble 60s 4.5s ease infinite;
+  box-shadow:  15rem -5rem 10rem 5rem inset var(--homepage-bubble);
+}
+
+@keyframes bubble {
+  0%, 100% {
+    transform: scale(1,1) ;
+  }
+  50% {
+    transform: scale(1.2) ;
+  }
+}
+
+@keyframes wobble {
+  0%,100% {
+    transform: scale(1,1) ;
+  }
+  50% {
+    transform: scale(1.2,1.2) ;
+  }
+}
+
 .ask {
   font-size: 40px;
   font-weight: 800;
@@ -86,12 +119,18 @@ animation: blob 6s ease infinite;
   grid-template-columns: 1fr;
   row-gap: 3rem;
 }
+.App::before {
+  width: 80%;
+}
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 70%;
    }
+   .App::before {
+    width: 60%;
+  }
 }
 
 
