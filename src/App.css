@@ -17,21 +17,24 @@ body {
 html {
   scroll-behavior: smooth;
   font-size: 110%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--loader-5) transparent;
 }
 
 .App {
-  display: block;
+  display: none;
   width: 100%;
   height: 100vh;
   opacity: 0;
   visibility: hidden;
-  transition-delay: 0.75s;
-  transition: opacity 0.75s, visibility 0.75s;
+  transition: opacity 0.75s, visibility 0.75s, display 0.75s;
 }
 
 .App-visible {
   opacity: 1;
   visibility: visible;
+  display: block;
+  transition-delay: 0.85s;
 }
 
 .App::before {
@@ -145,7 +148,7 @@ animation: blob 6s ease infinite;
 
 
 .v-animate {
-animation: vertical .6s ease-out forwards;  
+animation: vertical .75s ease-out forwards;  
 opacity: 0;
 }
 

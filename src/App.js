@@ -18,6 +18,7 @@ function App() {
     if (loader && content) {
       window.addEventListener("load", () => {
         setTimeout(() => {
+          /////----temp timeout ----/////
           loader.classList.add("preloader-hidden");
           content.classList.add("App-visible");
         }, 2000);
