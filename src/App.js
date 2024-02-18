@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { About } from "./components/About/about";
+import { ScrollTop } from "./components/Common/Scroll-Top/ScrollTop";
 import { Contact } from "./components/Contact/contact";
 import { EduSkill } from "./components/EduSkill/EduSkill";
 import { Experience } from "./components/Experience/experience";
@@ -38,6 +39,7 @@ function App() {
         <EduSkill />
         <Contact />
         <Footer />
+        <ScrollTop />
       </div>
     </React.Fragment>
   );

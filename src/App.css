@@ -186,5 +186,6 @@ opacity: 0;
 }
 
 .hidden {
+  opacity: 0;
   visibility: hidden;
 }
