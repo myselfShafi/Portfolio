@@ -15,7 +15,7 @@
 }
 
 .preloader::before {
-    content: '';
+    content: 'Loading..';
     position: absolute;
     top: 50%;
     width: 4rem;
@@ -24,18 +24,17 @@
     font-weight: 600;
     z-index: 10;
     border: 10px solid transparent;
-    border-top-color: var(--loader);
     border-radius: 50%;
-    animation: rotate 1s ease infinite;
+    animation: rotate 2s ease infinite;
    
 }
 
 @keyframes rotate {
     from {
-        transform: rotate(0turn);
+        border-top-color: transparent;
     }
     to {
-        transform: rotate(1turn);
+        border-top-color: var(--loader);
     }
     
 }
