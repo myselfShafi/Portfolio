@@ -6,12 +6,19 @@
       padding: 0 40px;
 }
 
+.institution {
+font-weight: 500;
+}
+
 .degree {
     margin: .5rem 0;
+    color: var(--about-text);
 }
 
 .timespan {
     font-style: italic;
+    color: var(--about-text);
+
 }
 
 .skills {
@@ -103,15 +110,23 @@
     padding: 2rem;
     margin-top: 1rem;
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.skill-slide {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: sliderOn 10s linear infinite;
 }
 
 .skill-list img {
     object-fit: contain;
     width: 3rem;
     height: 100%;
+    margin: 0 1rem;
 }
 
 .icon-name {
@@ -119,5 +134,13 @@
     left: unset;
     bottom: -4rem;
     font-size: .8rem;
+}
 
+@keyframes sliderOn {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

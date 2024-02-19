@@ -92,17 +92,32 @@ export const EduSkill = () => {
           <div className="more-skills">
             <p children={"More skills on deck!"} />
             <div className="skill-list">
-              {skillWithoutV.map((list) => {
-                return (
-                  <div key={list.id}>
-                    <Tooltip
-                      children={<img src={list.icon} alt={list.skill} />}
-                      text={list.skill}
-                      newClass={"icon-name"}
-                    />
-                  </div>
-                );
-              })}
+              <div className="skill-slide">
+                {skillWithoutV.map((list) => {
+                  return (
+                    <div key={list.id}>
+                      <Tooltip
+                        children={<img src={list.icon} alt={list.skill} />}
+                        text={list.skill}
+                        newClass={"icon-name"}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="skill-slide">
+                {skillWithoutV.map((list) => {
+                  return (
+                    <div key={list.id}>
+                      <Tooltip
+                        children={<img src={list.icon} alt={list.skill} />}
+                        text={list.skill}
+                        newClass={"icon-name"}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
