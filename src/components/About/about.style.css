@@ -1,20 +1,18 @@
+.bio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5%;
 }
 
-.bio-container {
-    display: inherit;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5rem;
-}
+.info-div {
+    width: 100%;
 
-.img-div img {
-    width: 30rem;
-    height: 100%;
-    object-fit: contain;
 }
 
 .intro {

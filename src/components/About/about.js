@@ -1,6 +1,6 @@
 import React from "react";
-import { PiDevicesBold, PiTelevisionSimpleBold } from "react-icons/pi";
-import profileimg from "../../assests/images/dp2.jpg";
+import { LiaMedapps } from "react-icons/lia";
+import { PiDevicesLight, PiTelevisionSimpleBold } from "react-icons/pi";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Card } from "../Shared/Card/card";
@@ -11,13 +11,13 @@ export const About = () => {
   const about = [
     {
       id: 1,
-      icon: <PiDevicesBold size={"3.5rem"} />,
+      icon: <PiDevicesLight size={"3.5rem"} />,
       title: "Web Design",
       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
     },
     {
       id: 2,
-      icon: <PiTelevisionSimpleBold size={"3.5rem"} />,
+      icon: <LiaMedapps size={"3.5rem"} />,
       title: "App Development",
       info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
     },
@@ -36,12 +36,23 @@ export const About = () => {
     "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, HTML5, CSS, and DOM.";
 
   return (
-    <MainContainer id="about" className="flex-div">
+    <MainContainer id="about">
       <div className="flex-div">
         <h1 className="ask mb auto-m" children={"Biography."} />
         <section className="bio-container">
-          <div className="img-div">
-            <img src={profileimg} alt="profile-img" />
+          <div className="info-div">
+            <p>
+              Name: <span children={"Md Shafi"} />
+            </p>
+            <p>
+              Name: <span children={"Md Shafi"} />
+            </p>
+            <p>
+              Name: <span children={"Md Shafi"} />
+            </p>
+            <p>
+              Name: <span children={"Md Shafi"} />
+            </p>
           </div>
           <div className="content-div">
             <p className="intro" children={intro} />

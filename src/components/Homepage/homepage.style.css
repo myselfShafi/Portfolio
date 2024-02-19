@@ -67,6 +67,8 @@
 .title {
   font-size: 3rem;
   font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
   width: max-content;
   background: var(--title-gradient);
   -webkit-text-fill-color: transparent;
