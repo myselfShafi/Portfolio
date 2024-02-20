@@ -1,6 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { SocialIcons } from "../../components/Shared/Reused-Icons/Icons";
 import "./footer.style.css";
 
 export const Footer = () => {
@@ -8,10 +7,11 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="icon-div">
-        <FaXTwitter className="social-icon" size={"45px"} />
-        <FaInstagram className="social-icon" size={"45px"} />
-        <FaLinkedin className="social-icon" size={"45px"} />
-        <FaGithub className="social-icon" size={"45px"} />
+        {SocialIcons.map((icon) => (
+          <a key={icon.id} href={icon.href} rel="noreferrer" target="_blank">
+            {icon.icon}
+          </a>
+        ))}
       </div>
       <p className="cpyryt">
         Copyright &#169; Shafi 2022 - {year}. All Rights Reserved.

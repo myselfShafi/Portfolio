@@ -15,18 +15,18 @@ export const Contact = () => {
   const contacts = [
     {
       id: 1,
-      icon: <BsMailbox2Flag size={"30px"} />,
+      icon: <BsMailbox2Flag size={"25px"} />,
       info: "Railway New Colony, Visakhapatnam, AndhraPradesh 530016",
     },
     {
       id: 2,
-      icon: <IoMailOpenOutline size={"30px"} />,
+      icon: <IoMailOpenOutline size={"25px"} />,
       info: "iamshafi25@gmail.com",
     },
     {
       id: 3,
-      icon: <CiMobile3 size={"30px"} />,
-      info: "+91 9666 370 688",
+      icon: <CiMobile3 size={"25px"} />,
+      info: "+91 9666-370-688",
     },
   ];
   return (

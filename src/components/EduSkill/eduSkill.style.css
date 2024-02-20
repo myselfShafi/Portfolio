@@ -107,7 +107,7 @@ font-weight: 500;
 .skill-list {
     width: 100%;
     background: var(--about-bg);
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     margin-top: 1rem;
     display: flex;
     position: relative;
@@ -132,7 +132,7 @@ font-weight: 500;
 .icon-name {
     top: unset;
     left: unset;
-    bottom: -4rem;
+    bottom: -3.5rem;
     font-size: .8rem;
 }
 

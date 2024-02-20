@@ -15,10 +15,10 @@ text-wrap: nowrap;
 
 .icon-div {
     display: inherit;
-    gap: 20%;
+    gap: 4rem;
 }
 
-.social-icon {
+.icon-div a {
     cursor: pointer;
     color: var(--footer-icon);
     &:hover {
