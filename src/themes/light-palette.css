@@ -1,56 +1,55 @@
 [data-theme='light'] {
-    --bg-main : #F1FAEE;
+    --bg-preset-1 : #F1FAEE;
 
-    --color-main: #457B9D;
+    --text-preset-2: #457B9D;
 
-    --sidebar-brand: #f6f6f6;
-    --sidebar-bg: #1D3557;
-    --sidebar-border: #208f9a;
-    --sidebar-icon: #f6f6f2;
-    --sidebar-icon-hover: #badfe7;
+    --text-preset-1: #f6f6f6;
+    --gradient-preset-3: #1D3557;
+    --text-preset-1: #f6f6f2;
+    --text-preset-1-hover: #badfe7;
     --sidebar-v-line: rgb(255, 56, 6);
     --sidebar-theme-color: #badfe7;
 
-    --homepage-name: #f11010;
-    --homepage-para: #4E4E50;
-    --homepage-bubble: rgba(169, 184, 195, 0.2);
+    --gradient-preset-2: #f11010;
+    --text-preset-4: #4E4E50;
+    --accent-preset-4: rgba(169, 184, 195, 0.2);
 
     --about-bg: #208f9a;
-    --about-text: #f6f6f6;
+    --text-preset-3: #f6f6f6;
     --about-icon-bg: #badfe7;
-    --about-icon-color: #f6f6f6;
+    --text-preset-4: #f6f6f6;
 
-    --exp-status-bg: rgb(59, 59, 107);
-    --exp-stepper-bg: rgb(13, 55, 91);
-    --exp-stepper-tip: rgb(165, 174, 182);
+    --accent-preset-2: rgb(59, 59, 107);
+    --text-preset-2: rgb(13, 55, 91);
+    --accent-preset-2: rgb(165, 174, 182);
     --exp-bg-hover: #18191c;
 
 
     --eduskill-bar-color: rgb(235, 81, 181);
     --eduskill-bar-bg: rgb(240, 239, 239);
 
-    --contact-header-text: #c2edce;
-    --contact-icon-border: rgb(56, 127, 133);
+    --accent-preset-2: #c2edce;
+    --text-preset-1: rgb(56, 127, 133);
     --contact-icon-bg-hover: rgb(56, 127, 133);    
-    --contact-icon-border-hover: #c2edce;
+    --text-preset-1-hover: #c2edce;
     --contact-input-bg: transparent;
     --contact-input-border: rgb(56, 127, 133);
     --contact-input-border-focus: #c2edce;
     --contact-input-text: rgb(56, 127, 133);
     
 
-    --button-bg: rgb(56, 127, 133);
-    --button-text: #f6f6f2;
+    --bg-preset-2: rgb(56, 127, 133);
+    --text-preset-5: #f6f6f2;
 
-    --footer-bg: rgb(56, 127, 133);
-    --footer-text: #f6f6f2;
+    --bg-preset-3: rgb(56, 127, 133);
+    --text-preset-5: #f6f6f2;
     --footer-icon: #f6f6f2;
     --footer-icon-hover: rgb(2, 20, 36);
 
-    --theme-icon-outline: #FFA364;
+    --accent-preset-2: #FFA364;
 
-    --title-gradient: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
-    --purple-gradient: linear-gradient(20deg,#6F2232, #950740, #C3073F);
+    --gradient-preset-1: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
+     --gradient-preset-4: linear-gradient(20deg,#6F2232, #950740, #C3073F);
    
 
 }

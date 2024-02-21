@@ -2,15 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--footer-bg);
-    color: var(--footer-text);
+    background-color: var(--bg-preset-3);
+    color: var(--text-preset-5);
     height: fit-content;
     padding: 1rem 15rem;
 }
 
 .cpyryt {
-    font-weight: 600;
-text-wrap: nowrap;
+    font-weight: 300;
+  text-wrap: nowrap;
 }
 
 .icon-div {
@@ -20,17 +20,16 @@ text-wrap: nowrap;
 
 .icon-div a {
     cursor: pointer;
-    color: var(--footer-icon);
+    color: var(--text-preset-1);
     &:hover {
       scale: 1.2;
     transition: scale ease-in-out .3s;
-    color: var(--footer-icon-hover)
-
     }
   }
 
   @media (max-width: 1200px) {
     .footer {
         flex-direction: column;
+        row-gap: 2rem;
     }
   }

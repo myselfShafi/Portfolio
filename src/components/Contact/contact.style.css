@@ -29,10 +29,10 @@
 .outline{
     width: 4rem;
     height: 4rem;
-    border: 2px solid var(--contact-icon-border);
+    border: 2px solid var(--text-preset-1);
     border-radius: 50%;
     display: flex;
-    color: var(--exp-stepper-tip);
+    color: var(--accent-preset-2);
     justify-content: center;
     align-items: center;
     margin:0 2rem;
@@ -40,8 +40,8 @@
 
     &:hover{
         
-        background-color: var(--contact-icon-border);
-        border-color: var(--contact-icon-border);
+        background-color: var(--text-preset-1);
+        border-color: var(--text-preset-1);
 
         * {
             transform: scale(1.03);
@@ -58,7 +58,7 @@
 
 .contact-para {
     max-width: 60%;
-    color: var(--about-text);
+    color: var(--text-preset-3);
     font-weight: 400;
 
 }
@@ -71,14 +71,19 @@ form {
 }
 
 input, textarea {
-    background-color: var(--contact-input-bg);
-    border: .5px solid var(--contact-input-border);
+    background: transparent;
+    border: .5px solid var(--text-preset-3);
     font-size: 18px;
+    font-weight: lighter;
     padding: 15px;
-    color: var(--contact-input-text);
+    color: var(--text-preset-1);
     &:focus {
-        outline-color: var(--contact-input-border-focus);
+        outline-color: var(--text-preset-5);
     }
+}
+
+::placeholder, ::-webkit-input-placeholder {
+    color: var(--text-preset-3);
 }
 
 input#subject, textarea#comment {

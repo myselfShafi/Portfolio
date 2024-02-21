@@ -1,56 +1,26 @@
 [data-theme='dark'] {
-    --bg-main : #212529;
-
-    --color-main: #F5F5F5;
-
-    --sub-title: #4E4E50;
-
-    --sidebar-brand: #ffff;
-    --sidebar-bg: linear-gradient(to top left,#6F2232, #950740, #C3073F);;
-    --sidebar-border: rgb(129, 104, 157, .5);
-    --sidebar-icon: #ffff;
-    --sidebar-icon-hover: #ffffffb6;
-    --sidebar-v-line: rgb(104, 208, 245);
-    --sidebar-theme-color: aliceblue;
-
-    --homepage-name: #96EFFF;
-    --homepage-para: #EBFFFB;
-    --homepage-bubble: rgba(61, 59, 64, 0.2);
-    
-    --about-bg: #18191c;
-    --about-text: #AAAAAA;
-    --about-icon-bg: #8f27bf;
-    --about-icon-color: #f6f6f6;
+    --bg-preset-1 : #1B262C;
+    --bg-preset-2 : #3282B8;
+    --bg-preset-3 : #0F1A20;
 
 
-    --exp-status-bg: #6F2232;
-    --exp-stepper-bg: aliceblue;
-    --exp-stepper-tip: #C3073F;
-    --exp-bg-hover: #18191c;
+    --text-preset-1 : #ffffff;
+    --text-preset-2 : #F5F5F5;
+    --text-preset-3 : #AAAAAA;
+    --text-preset-4 : #EBFFFB;
+    --text-preset-5: #BBE1FA;
 
-    --eduskill-bar-color: rgb(92, 92, 215);
-    --eduskill-bar-bg: rgb(200, 216, 218);
 
-    --contact-header-text:  #950740;
-    --contact-icon-border: aliceblue;
-    --contact-icon-bg-hover: ;    
-    --contact-icon-border-hover: ;
-    --contact-input-bg: transparent;
-    --contact-input-border: rgba(240, 248, 255, 0.553);
-    --contact-input-border-focus: #c2edce;
-    --contact-input-text: rgb(56, 127, 133);
+    --gradient-preset-1 : linear-gradient(20deg,#6f2231b2, #950740, #C3073F, #9D0B28);
+    --gradient-preset-2: linear-gradient(330deg, #0F4C75, #3282B8 , #BBE1FA);
+    --gradient-preset-3: linear-gradient(225deg, #0F4C75, #3282B8 , #BBE1FA);
+    --gradient-preset-4: linear-gradient(135deg, #3282B8 , #BBE1FA);
 
-    --button-bg: #E5CFF7;
-    --button-text: #49108B;
 
-    --footer-bg: #2B2024;
-    --footer-text: #f6f6f2;
-    --footer-icon: aliceblue;
-    --footer-icon-hover: aliceblue;
+    --accent-preset-1 : rgba(65, 133, 152, 0.2);
+    --accent-preset-2 : #C3073F;
+    --accent-preset-3 : #A52A2A;
+    --accent-preset-4 : rgba(61, 59, 64, 0.2);
 
-    --theme-icon-outline: #FFA364;
-
-    --title-gradient: linear-gradient(20deg,#6F2232, #950740, #C3073F);
-    --purple-gradient: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
 
 }

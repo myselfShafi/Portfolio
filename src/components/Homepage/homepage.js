@@ -1,10 +1,11 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
+import cv from "../../assests/Resume-.pdf";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./homepage.style.css";
 
-const description = ` I specialize in translating designs into responsive, user-friendly websites. Let's collaborate and turn your digital vision into reality!`;
+const description = ` I specialize in translating designs into responsive, user-friendly websites. Let's collaborate and turn your digital vision into an immersive online experience!`;
 
 export const Homepage = () => {
   const titles = ["Frontend Developer", "Web Designer", "Coder"];
@@ -26,9 +27,9 @@ export const Homepage = () => {
         </div>
         <p children={description} className="para v-animate" />
         <Button
+          downloadLink={cv}
           children={"Download CV"}
           icon={<FaDownload />}
-          onClick={() => alert("afgs")}
           className={"cv v-animate"}
         />
       </header>

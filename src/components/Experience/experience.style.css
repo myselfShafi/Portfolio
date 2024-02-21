@@ -4,14 +4,13 @@
     column-gap: 40px;
     padding: 1rem;
     border-radius: 13px;
-    outline-color: var(--sub-title);
+    outline-color: var(--text-preset-1);
     transition: all .3s ease;
 }
 
 .exp-detail:hover {
-    background-color: var(--exp-bg-hover);
-    outline: .5px solid var(--sub-title);
-    box-shadow: rgba(62, 62, 74, 0.2) 0px 7px 29px 0px;
+    background: var(--accent-preset-4);
+    box-shadow: var(-accent-preset-4) 0px 7px 29px 0px;
 }
 
 .company {
@@ -24,7 +23,7 @@
 
 .status {
     margin-top: 10px;
-    background-color: var(--exp-status-bg);
+    background-color: var(--accent-preset-2);
     border-radius: 5px;
     padding: 8px 10px;
     width: fit-content;
@@ -34,7 +33,7 @@
 .exp-para {
     line-height: 30px;
     margin-bottom: 50px;
-    color: var(--about-text);
+    color: var(--text-preset-3);
 }
 
 .stepper {
@@ -42,7 +41,7 @@
     padding:  40px 0;
     margin: 20px 0;
     width: 1px;
-    background-color: var(--exp-stepper-bg);
+    background-color: var(--text-preset-2);
     margin-left: 40px;
 }
 
@@ -52,7 +51,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: var(--exp-stepper-tip)
+    background-color: var(--accent-preset-2)
 }
 
 .stepper::before {

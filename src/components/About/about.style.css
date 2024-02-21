@@ -30,7 +30,7 @@
 
 .intro {
     font-size: 1.25rem;
-  color: var(--homepage-para);
+  color: var(--text-preset-4);
   line-height: 2;
 }
 
@@ -42,18 +42,18 @@ margin-bottom: 1rem;
 }
 
 .social-div .social-icon:hover {
-    background: var(--contact-header-text);
+    background: var(--accent-preset-3);
 }
 
 .details span:first-child {
     display: inline-flex;
-   color: var(--contact-header-text);
+   color: var(--accent-preset-2);
    margin-right: .5rem;
 }
 
 .details span:last-child {
     font-weight: 400;
-    color: var(--about-text);
+    color: var(--text-preset-3);
 }
 
 @media (max-width: 480px) {
@@ -90,8 +90,8 @@ margin-bottom: 1rem;
 .social-div .social-icon {
     height: 3rem;
     width: 3rem;
-    background-color: var(--about-bg);
-    color: var(--color-main);
+    background-color: var(--accent-preset-4);
+    color: var(--text-preset-2);
     display: flex;
     border-radius: 4px;
     justify-content: center;
@@ -101,5 +101,5 @@ margin-bottom: 1rem;
 }
 
 .social-div .social-icon a > * {
-    color: var(--color-main);
+    color: var(--text-preset-2);
 }

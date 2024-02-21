@@ -6,8 +6,8 @@
     height: 3rem;
     border-radius: 10%;
     border: none;
-    background-color: var(--homepage-name);
-    color: var(--bg-main);
+    background-color: var(--gradient-preset-2);
+    color: var(--bg-preset-1);
     visibility: hidden;
     opacity: 0;
     rotate: -135deg;
@@ -30,7 +30,7 @@
 }
 
 .scrollUp:active, .scrollUp:focus {
-    box-shadow: 2px 2px 15px 2px var(--color-main);
+    box-shadow: 2px 2px 15px 2px var(--text-preset-2);
     .scroll-icon {
     transform: translate(100%, 100%);
    }

@@ -9,16 +9,17 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    transition: all 1s ease;
+    background: var(--bg-preset-2);
+    background: transparent;
+    outline: 2px solid var(--bg-preset-2);
+    color: var(--text-preset-5);
+    transition:  color .3s ease, outline .3s ease, background .3s ease;
 
   }
 
   .btn-cv:hover {
-    color: var(--button-bg);
-    background-color: transparent;
-    outline: 2px solid var(--button-bg);
+    background: var(--bg-preset-2);
+    color: var(--text-preset-2);
   }
 
   

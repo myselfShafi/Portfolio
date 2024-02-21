@@ -12,14 +12,14 @@
     content: '';
     position: absolute;
     height: 1px;
-    background-color: var(--color-main);
+    background-color: var(--text-preset-2);
     bottom: 50%;
     transform-origin: left;
 }
 
 .nav-body::before {
-    width: 20rem; 
-    left: 0;
+    width: 18rem; 
+    left: 2rem;
     animation: navline 2s forwards;
 }
 

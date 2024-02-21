@@ -9,7 +9,7 @@ export const useCircularProgress = (array) => {
       let end = parseInt(array[index].value);
       let progress = setInterval(() => {
         start++;
-        div.style.background = `conic-gradient(var(--color-main) ${
+        div.style.background = `conic-gradient(var(--text-preset-5) ${
           start * 3.6
         }deg, transparent 0deg)`;
 

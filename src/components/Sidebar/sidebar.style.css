@@ -1,17 +1,18 @@
 .sbar-body {
+    margin: 10px;
     width: 10rem;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
+    border-radius: 10px;
     transition: box-shadow ease-in .2s;
-    border: 1px solid var(--sidebar-border);
     border-left: 0;
     z-index: 10;
-    background: var(--sidebar-bg);
+    background: var(--gradient-preset-3);
 }
 
 .logo-img {
@@ -21,21 +22,23 @@
     display: flex; 
     justify-content: center;
     padding: 1.5rem 1rem; 
-color: var(--sidebar-brand);
+color: var(--text-preset-1);
 gap: 10px;
 }
 
 .logo-img h1 {
 letter-spacing: 2px;
-font-family: "Merienda", cursive;
+/* font-family: "Merienda", cursive; */
+font-family: "League Spartan", sans-serif;
+
 text-decoration: overline;
 }
 
 .theme-mode {
     cursor: pointer;
     border: none;
-    background-color: transparent;
-    color: var(--sidebar-theme-color);
+    background: transparent;
+    color: var(--bg-preset-1);
     padding: .5rem;
     border-radius: 50%;
     display: flex;
@@ -44,7 +47,7 @@ text-decoration: overline;
 }
 
 .theme-mode.active {
-    border: 3px dashed var(--theme-icon-outline);
+    border: 3px dashed var(--accent-preset-2);
     transform: rotateZ(360deg);
     transition: transform 1s ease-out ;
 }
@@ -59,9 +62,9 @@ text-decoration: overline;
 }
 
 .sbar-icon {
-    color: var(--sidebar-icon);
+    color: var(--text-preset-1);
 &:hover {
-    color: var(--sidebar-icon-hover);
+    color: var(--text-preset-1-hover);
 }
 }
 
