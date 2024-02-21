@@ -76,7 +76,9 @@ margin-bottom: 1rem;
         grid-template-rows: 1fr 1fr; 
         padding: 0 2% ;
         row-gap: 2rem;
-
+    }
+    .bio-container {
+        flex-direction: column;
     }
 }
 

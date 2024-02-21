@@ -1,10 +1,9 @@
 @import url(./themes/dark-palette.css);
 @import url(./themes/light-palette.css);
 @import url(./themes/default-palette.css);
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 body {
   position: relative;
@@ -144,7 +143,7 @@ animation: blob 6s ease infinite;
 
 @media (max-width: 768px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
    }
    .App::before {
     width: 60%;

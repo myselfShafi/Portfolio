@@ -157,7 +157,7 @@
     height: auto;
   }
   .container {
-    height: 70vh;
+    height: 100vh;
     justify-content: flex-end;
   }
 }
@@ -168,7 +168,7 @@
   }
   .wave-bg {
     top: 10%; 
-    right: 10%;
+    right: auto;
     background-position: right;
   }
   

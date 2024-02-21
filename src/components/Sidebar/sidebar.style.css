@@ -10,7 +10,6 @@
     left: 0;
     border-radius: 10px;
     transition: box-shadow ease-in .2s;
-    border-left: 0;
     z-index: 10;
     background: var(--gradient-preset-3);
 }
@@ -18,20 +17,21 @@
 .logo-img {
     width: 100%;
     height: auto;
-    display: block;
     display: flex; 
+    align-items: center;
     justify-content: center;
-    padding: 1.5rem 1rem; 
-color: var(--text-preset-1);
-gap: 10px;
+    padding: 1rem; 
+    color: var(--bg-preset-1);
 }
 
-.logo-img h1 {
-letter-spacing: 2px;
-/* font-family: "Merienda", cursive; */
-font-family: "League Spartan", sans-serif;
+.logo-img h1, .logo-small {
+font-family: "Leckerli One", cursive;
 
-text-decoration: overline;
+}
+
+.logo-img h1 span, .logo-small {
+    
+    color: var(--text-preset-5);
 }
 
 .theme-mode {
@@ -63,28 +63,60 @@ text-decoration: overline;
 
 .sbar-icon {
     color: var(--text-preset-1);
+    transition: transform .3s ease;
 &:hover {
-    color: var(--text-preset-1-hover);
+    color: var(--bg-preset-1);
+    transform: scale(1.2);
 }
+}
+
+.logo-small {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 3rem;
 }
 
 @media (max-width: 850px) {
     .sbar-body {
         display: none;
     }
+    .logo-small {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px) {
     .sbar-body {
-        width: 6rem;
+        width: 5rem !important;
+    }
+    .logo-img {
+font-size: .8rem;    }
+}
+
+@media (max-width: 1400px) {
+    .sbar-body {
+        width: 8rem;
+    }
+    .logo-img {
+        flex-direction: column;
+    }
+    .logo-img h1 span {
+        order: 1;
+display: block;
     }
 }
 
-.line {
+.sbar-body::before {
+    content: '';
     position: absolute;
-    width: .3rem;
-    height: 100vh;
-    background-color: var(--sidebar-v-line);
+    top: 2px;
+    left: 0;
+    width: .35rem;
+    border-radius: 10px;
+    height: calc(100vh - 24px);
+    background-color: var(--accent-preset-2);
     animation: scaling 1s ease;
     transform-origin: top;
     animation-timeline: scroll();
@@ -99,3 +131,4 @@ text-decoration: overline;
  
     }
 }
+

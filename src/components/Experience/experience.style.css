@@ -31,8 +31,9 @@
 }
 
 .exp-para {
-    line-height: 30px;
+    line-height: 2;
     margin-bottom: 50px;
+    font-size: 1.2rem;
     color: var(--text-preset-3);
 }
 

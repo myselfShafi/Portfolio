@@ -50,40 +50,45 @@ const Sidebar = () => {
     { id: 2, class: "dark", icon: <BsMoonStarsFill size={"20px"} /> },
   ];
   return (
-    <div className={`sbar-body`}>
-      <div className="line" />
-      <div className="logo-img">
-        <h1>Shafi.</h1>
-      </div>
-      <div className="sbar-icon-div">
-        {icons.map((item) => {
-          return (
-            <div key={item.id}>
-              <div>
-                <Tooltip
-                  children={item.icon}
-                  text={item.text}
-                  href={item.href}
-                />
+    <>
+      <span className="logo-small" children={"Sh."} />
+      <div className={`sbar-body`}>
+        <div className="logo-img">
+          <h1>
+            Dev.
+            <span children={"Sh."} />
+          </h1>
+        </div>
+        <div className="sbar-icon-div">
+          {icons.map((item) => {
+            return (
+              <div key={item.id}>
+                <div>
+                  <Tooltip
+                    children={item.icon}
+                    text={item.text}
+                    href={item.href}
+                  />
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <div className="logo-img">
+          {themes.map((value) => {
+            return (
+              <button
+                key={value.id}
+                type="button"
+                className={`theme-mode ${theme === value.class && "active"}`}
+                onClick={() => toggleTheme(value.class)}
+                children={value.icon}
+              />
+            );
+          })}
+        </div>
       </div>
-      <div className="logo-img">
-        {themes.map((value) => {
-          return (
-            <button
-              key={value.id}
-              type="button"
-              className={`theme-mode ${theme === value.class && "active"}`}
-              onClick={() => toggleTheme(value.class)}
-              children={value.icon}
-            />
-          );
-        })}
-      </div>
-    </div>
+    </>
   );
 };
 
