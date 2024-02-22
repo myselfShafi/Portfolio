@@ -110,6 +110,7 @@
 .cv {
   margin-top: 1rem;
   animation-delay: 0.5s;
+  display: inline-block;
 }
 
 .wave-bg {

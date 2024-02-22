@@ -34,31 +34,13 @@ font-family: "Leckerli One", cursive;
     color: var(--text-preset-5);
 }
 
-.theme-mode {
-    cursor: pointer;
-    border: none;
-    background: transparent;
-    color: var(--bg-preset-1);
-    padding: .5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.theme-mode.active {
-    border: 3px dashed var(--accent-preset-2);
-    transform: rotateZ(360deg);
-    transition: transform 1s ease-out ;
-}
-
 .sbar-icon-div {
     display: inherit;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     flex: 1;
     padding: 80px 0;
-    gap: 10%;
 }
 
 .sbar-icon {
@@ -104,7 +86,10 @@ font-size: .8rem;    }
     }
     .logo-img h1 span {
         order: 1;
-display: block;
+        display: block;
+    }
+    .toggle-btn {
+        transform: rotateZ(-90deg) translateX(1rem);
     }
 }
 
@@ -132,3 +117,60 @@ display: block;
     }
 }
 
+.theme-btn {
+    background: var(--text-preset-1);
+    border-radius: 10px;
+}
+
+.toggle-btn {
+    display: block;
+    background: var(--bg-preset-1);
+    color: var(--bg-preset-1);
+    width: 90px;
+    height: 45px;
+    border-radius: 90px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-btn > svg:first-child, .toggle-btn > svg:last-child {
+    position: absolute;
+    top: 12px;
+    z-index: 5;
+}
+
+.toggle-btn > svg:first-child {
+    left: 12px;
+}
+
+.toggle-btn > svg:last-child {
+    right: 12px;
+}
+
+.toggle-btn::after {
+content: '';
+position: absolute;
+width: 35px;
+height: 35px;
+top: 5px;
+left: 5px;
+border-radius: 35px;
+background: var(--text-preset-1);
+transition: all .2s linear;
+}
+
+input#toggle-theme {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + .toggle-btn::after {
+    left: 85px;
+    transform: translateX(-100%);
+}
+
+.toggle-btn:active::after {
+    width: 50px;
+}

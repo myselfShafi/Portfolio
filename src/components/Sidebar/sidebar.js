@@ -12,43 +12,52 @@ import "./sidebar.style.css";
 
 const Sidebar = () => {
   const { theme, toggleTheme } = useTheme();
+
+  const abc = () => {
+    let current = document.getElementById("toggle-theme");
+
+    current.addEventListener("change", (event) => {
+      if (event.target.checked) {
+        toggleTheme("light");
+      } else {
+        toggleTheme("dark");
+      }
+    });
+  };
+
   const icons = [
     {
       id: 1,
-      icon: <IoHomeOutline className={`sbar-icon`} size={"40px"} />,
+      icon: <IoHomeOutline className={`sbar-icon`} size={"30px"} />,
       text: "Home",
       href: "#home",
     },
     {
       id: 2,
-      icon: <GoPerson className={`sbar-icon`} size={"40px"} />,
+      icon: <GoPerson className={`sbar-icon`} size={"30px"} />,
       text: "About",
       href: "#about",
     },
     {
       id: 3,
-      icon: <IoMdPaper className={`sbar-icon`} size={"40px"} />,
+      icon: <IoMdPaper className={`sbar-icon`} size={"30px"} />,
       text: "Resume",
       href: "#resume",
     },
     {
       id: 4,
-      icon: <LiaSuitcaseSolid className={`sbar-icon`} size={"40px"} />,
+      icon: <LiaSuitcaseSolid className={`sbar-icon`} size={"30px"} />,
       text: "Work",
       href: "#work",
     },
     {
       id: 5,
-      icon: <PiPhoneOutgoing className={`sbar-icon`} size={"40px"} />,
+      icon: <PiPhoneOutgoing className={`sbar-icon`} size={"30px"} />,
       text: "Contact",
       href: "#contact-me",
     },
   ];
 
-  const themes = [
-    { id: 1, class: "light", icon: <ImSun size={"20px"} /> },
-    { id: 2, class: "dark", icon: <BsMoonStarsFill size={"20px"} /> },
-  ];
   return (
     <>
       <span className="logo-small" children={"Sh."} />
@@ -63,30 +72,21 @@ const Sidebar = () => {
           {icons.map((item) => {
             return (
               <div key={item.id}>
-                <div>
-                  <Tooltip
-                    children={item.icon}
-                    text={item.text}
-                    href={item.href}
-                  />
-                </div>
+                <Tooltip
+                  children={item.icon}
+                  text={item.text}
+                  href={item.href}
+                />
               </div>
             );
           })}
         </div>
-        <div className="logo-img">
-          {themes.map((value) => {
-            return (
-              <button
-                key={value.id}
-                type="button"
-                className={`theme-mode ${theme === value.class && "active"}`}
-                onClick={() => toggleTheme(value.class)}
-                children={value.icon}
-              />
-            );
-          })}
-        </div>
+
+        <input id="toggle-theme" type="checkbox" />
+        <label htmlFor="toggle-theme" className="toggle-btn" onClick={abc}>
+          <BsMoonStarsFill size={"20px"} />
+          <ImSun size={"20px"} />
+        </label>
       </div>
     </>
   );
