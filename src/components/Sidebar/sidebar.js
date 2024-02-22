@@ -11,7 +11,7 @@ import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./sidebar.style.css";
 
 const Sidebar = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
 
   const abc = () => {
     let current = document.getElementById("toggle-theme");
@@ -84,8 +84,8 @@ const Sidebar = () => {
 
         <input id="toggle-theme" type="checkbox" />
         <label htmlFor="toggle-theme" className="toggle-btn" onClick={abc}>
-          <BsMoonStarsFill size={"20px"} />
           <ImSun size={"20px"} />
+          <BsMoonStarsFill size={"20px"} />
         </label>
       </div>
     </>

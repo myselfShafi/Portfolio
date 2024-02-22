@@ -5,9 +5,10 @@ const ThemeContext = createContext();
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
   useEffect(() => {
-    document
-      .querySelector("body")
-      .setAttribute("data-theme", localStorage.getItem("mode") ?? "light");
+    const value = localStorage.getItem("mode");
+    document.querySelector("body").setAttribute("data-theme", value ?? "light");
+
+    document.getElementById("toggle-theme").checked = value !== "light" && true;
   }, []);
 
   const toggleTheme = (theme) => {
