@@ -58,6 +58,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 2px;
+  transition: background .5s ease-in-out;
 }
 
 .title-div {

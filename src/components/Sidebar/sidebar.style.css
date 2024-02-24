@@ -9,7 +9,7 @@
     bottom: 0;
     left: 0;
     border-radius: 10px;
-    transition: box-shadow ease-in .2s, background .3s ease;
+    transition: box-shadow ease-in .2s, background .3s ease-in-out;
     z-index: 10;
     background: var(--gradient-preset-3);
 }
