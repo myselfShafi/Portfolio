@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-preset-3);
-    color: var(--text-preset-5);
+    color: var(--text-preset-6);
     height: fit-content;
     padding: 1rem 15rem;
 }
@@ -20,7 +20,7 @@
 
 .icon-div a {
     cursor: pointer;
-    color: var(--text-preset-1);
+    color: var(--text-preset-6);
     &:hover {
       scale: 1.2;
     transition: scale ease-in-out .3s;

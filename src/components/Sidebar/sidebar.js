@@ -4,8 +4,7 @@ import { GoPerson } from "react-icons/go";
 import { ImSun } from "react-icons/im";
 import { IoMdPaper } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
-import { LiaSuitcaseSolid } from "react-icons/lia";
-import { PiPhoneOutgoing } from "react-icons/pi";
+import { PiLightbulbLight, PiPhoneOutgoing } from "react-icons/pi";
 import { useTheme } from "../../contexts/themeContext";
 import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./sidebar.style.css";
@@ -46,9 +45,9 @@ const Sidebar = () => {
     },
     {
       id: 4,
-      icon: <LiaSuitcaseSolid className={`sbar-icon`} size={"30px"} />,
-      text: "Work",
-      href: "#work",
+      icon: <PiLightbulbLight className={`sbar-icon`} size={"30px"} />,
+      text: "Skills",
+      href: "#education-skills",
     },
     {
       id: 5,

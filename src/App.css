@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
   font-size: 110%;
   scrollbar-width: thin;
-  scrollbar-color: var(--loader-5) transparent;
+  scrollbar-color: var(--loader-4) transparent;
 }
 
 .App {
@@ -51,6 +51,7 @@ html {
   transform-origin: right top;
   animation: bubble 4s ease-out forwards, wobble 60s 4.5s ease infinite;
   box-shadow:  15rem -5rem 10rem 5rem inset var(--accent-preset-4);
+  transition: box-shadow .3s ease-in;
 }
 
 @keyframes bubble {
@@ -74,11 +75,10 @@ html {
 .ask {
   font-size: 60px;
   font-weight: 800;
-  background: var(--accent-preset-5);
+  color: var(--accent-preset-5);
   font-family: "League Spartan", sans-serif;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   position: relative;
+  z-index: 1;
 }
 
 .ask::before {
@@ -90,8 +90,9 @@ height: 3.5rem;
 z-index: -1;
 border-radius: 50%;
 opacity: .6;
-background: var(--text-preset-4);
+background: var(--accent-preset-7);
 animation: blob 6s ease infinite;
+background-clip: padding-box;
 }
 
 @keyframes blob {  

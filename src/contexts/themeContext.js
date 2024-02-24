@@ -6,9 +6,9 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
   useEffect(() => {
     const value = localStorage.getItem("mode");
-    document.querySelector("body").setAttribute("data-theme", value ?? "light");
+    document.querySelector("body").setAttribute("data-theme", value ?? "dark");
 
-    document.getElementById("toggle-theme").checked = value !== "light" && true;
+    document.getElementById("toggle-theme").checked = value === "dark" && true;
   }, []);
 
   const toggleTheme = (theme) => {

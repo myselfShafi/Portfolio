@@ -14,7 +14,7 @@
 
   [data-theme='light'] {
     .seperator {
-        filter: unset;
+        filter: opacity(0);
     }
   }
 

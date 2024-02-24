@@ -1,3 +1,8 @@
+#resume {
+    background: var(--bg-preset-4);
+    transition: background .3s ease-in-out;
+}
+
 .exp-detail {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -23,6 +28,7 @@
 
 .status {
     margin-top: 10px;
+    color: var(--text-preset-6);
     background-color: var(--accent-preset-2);
     border-radius: 5px;
     padding: 8px 10px;

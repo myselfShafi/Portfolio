@@ -25,13 +25,12 @@
 }
 
 .logo-img h1, .logo-small {
-font-family: "Leckerli One", cursive;
+font-family: "Leckerli One", cursive !important;
 
 }
 
 .logo-img h1 span, .logo-small {
-    
-    color: var(--text-preset-5);
+    color: var(--text-preset-7);
 }
 
 .sbar-icon-div {
@@ -44,7 +43,7 @@ font-family: "Leckerli One", cursive;
 }
 
 .sbar-icon {
-    color: var(--text-preset-1);
+    color: var(--text-preset-6);
     transition: transform .3s ease;
 &:hover {
     color: var(--bg-preset-1);

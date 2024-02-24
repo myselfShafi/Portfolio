@@ -6,7 +6,7 @@
     height: 3rem;
     border-radius: 10%;
     border: none;
-    background-color: var(--gradient-preset-2);
+    background: var(--accent-preset-5);
     color: var(--bg-preset-1);
     visibility: hidden;
     opacity: 0;
@@ -25,12 +25,12 @@
 
 .scroll-icon {
     transform: translate(0, 0);
-    transition: transform 2s ease;
+    transition: transform 1s ease;
 
 }
 
 .scrollUp:active, .scrollUp:focus {
-    box-shadow: 2px 2px 15px 2px var(--text-preset-2);
+    box-shadow: 2px 2px 15px 2px var(--text-preset-5);
     .scroll-icon {
     transform: translate(100%, 100%);
    }

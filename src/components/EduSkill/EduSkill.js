@@ -60,7 +60,7 @@ export const EduSkill = () => {
   useCircularProgress(skillWithV);
 
   return (
-    <MainContainer id="resume" className="flex-div">
+    <MainContainer id="education-skills" className="flex-div">
       <h1 className="ask mb auto-m" children={"Education & Skills."} />
       <section className="grid-section">
         <div className="education">

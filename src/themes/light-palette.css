@@ -1,55 +1,32 @@
 [data-theme='light'] {
-    --bg-preset-1 : #F1FAEE;
+    --bg-preset-1 : #ffffff;
+    --bg-preset-2 : #ED7D31;
+    --bg-preset-3 : #abb8c3;
+    --bg-preset-4: #f7f7ff;
 
-    --text-preset-2: #457B9D;
-
-    --text-preset-1: #f6f6f6;
-    --gradient-preset-3: #1D3557;
-    --text-preset-1: #f6f6f2;
-    --text-preset-1-hover: #badfe7;
-    --sidebar-v-line: rgb(255, 56, 6);
-    --sidebar-theme-color: #badfe7;
-
-    --gradient-preset-2: #f11010;
-    --text-preset-4: #4E4E50;
-    --accent-preset-4: rgba(169, 184, 195, 0.2);
-
-    --about-bg: #208f9a;
-    --text-preset-3: #f6f6f6;
-    --about-icon-bg: #badfe7;
-    --text-preset-4: #f6f6f6;
-
-    --accent-preset-2: rgb(59, 59, 107);
-    --text-preset-2: rgb(13, 55, 91);
-    --accent-preset-2: rgb(165, 174, 182);
-    --exp-bg-hover: #18191c;
+    --text-preset-1 : #F38A3F;
+    --text-preset-2 : #555;
+    --text-preset-3 : #543A3A;
+    --text-preset-4 : #33313B;
+    --text-preset-5 : #E36414;
+    --text-preset-6 : #f7f7ff;
+    --text-preset-7 : #9A031E;
 
 
-    --eduskill-bar-color: rgb(235, 81, 181);
-    --eduskill-bar-bg: rgb(240, 239, 239);
+    --gradient-preset-1 : linear-gradient(20deg, #5E4DB2, #9F8FEF , #DFD8FD);
+    --gradient-preset-2: linear-gradient(330deg,#A54800  ,#F38A3F, #FEC195);
+    --gradient-preset-3 : linear-gradient(225deg,#FB8B24, #E36414, #9A031E);
 
-    --accent-preset-2: #c2edce;
-    --text-preset-1: rgb(56, 127, 133);
-    --contact-icon-bg-hover: rgb(56, 127, 133);    
-    --text-preset-1-hover: #c2edce;
-    --contact-input-bg: transparent;
-    --contact-input-border: rgb(56, 127, 133);
-    --contact-input-border-focus: #c2edce;
-    --contact-input-text: rgb(56, 127, 133);
-    
 
-    --bg-preset-2: rgb(56, 127, 133);
-    --text-preset-5: #f6f6f2;
+    --gradient-preset-4: linear-gradient(135deg, #E36414 , #FEC195);
 
-    --bg-preset-3: rgb(56, 127, 133);
-    --text-preset-5: #f6f6f2;
-    --footer-icon: #f6f6f2;
-    --footer-icon-hover: rgb(2, 20, 36);
 
-    --accent-preset-2: #FFA364;
-
-    --gradient-preset-1: linear-gradient(140deg,#C5FFF8, #96EFFF, #5FBDFF);
-     --gradient-preset-4: linear-gradient(20deg,#6F2232, #950740, #C3073F);
-   
+    --accent-preset-1 : #E6E6FA;
+    --accent-preset-2 : #8F7EE7;
+    --accent-preset-3 : #9F8FEF;
+    --accent-preset-4: rgba(215, 208, 250, 0.2); 
+    --accent-preset-5 : #FFA500;  
+    --accent-preset-6 : #f9f8f5;
+    --accent-preset-7 : #8F7EE7;
 
 }
