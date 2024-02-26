@@ -4,5 +4,78 @@
     "github": "https://github.com/myselfShafi",
     "instagram": "https://instagram.com/",
     "linkedin": "https://www.linkedin.com/in/myself-shafi/"
-  }
+  },
+  "bio": {
+    "name": "Md Shafi",
+    "age": "27",
+    "mob": " +91 9666-370-688",
+    "mail": "iamshafi25@gmail.com",
+    "address1": "Andhra Pradesh, India",
+    "address2": "Railway New Colony, Visakhapatnam, AndhraPradesh 530016",
+    "hobby": "Gaming, Music",
+    "intro1": "Hello, I'm Shafi, a Software Developer with frontend expertise from India. I develop and craft web elements for clients across different locations. I like work with new people. New people new Experiences.",
+    "intro2": "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, HTML5, CSS, and DOM."
+  },
+  "about": {
+    "title1": "Web Design",
+    "info1": "I improve and refine your online presence. Your website acts as the main entry point to your business and a key source of revenue.",
+    "title2": "App Development",
+    "info2": "Design and build custom digital solutions tailored to meet the clients' needs, ensuring seamless functionality and user-friendly experiences.",
+    "title3": "UI/UX Design",
+    "info3": "Seamlessly blend UI/UX design principles with cutting-edge technologies to elevate your digital products."
+  },
+  "education": [
+    {
+      "id": 1,
+      "institue": "Vignan's Institute of Information & Technology (JNTUK)",
+      "degree": "B.Tech Undergraduate",
+      "duration": "2014 - 2018"
+    },
+    {
+      "id": 2,
+      "institue": "Narayana Institution",
+      "degree": "Intermediate - MPC",
+      "duration": "2012 - 2014"
+    },
+    {
+      "id": 3,
+      "institue": "Kendriya Vidyalaya",
+      "degree": "CBSE - High School",
+      "duration": "till 2012"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "position": "Technical Support Associate",
+      "duration": "Dec 2020 - Apr 2022",
+      "status": "Full Time",
+      "companyName": "Ttec",
+      "workInfo": "Worked for Ebay Inc. as a Technical specialist and Customer support."
+    },
+    {
+      "id": 2,
+      "position": "Frontend Developer",
+      "duration": "May 2022 - May 2023",
+      "status": "Part Time",
+      "companyName": "Beaver software IT services Ltd.",
+      "workInfo": "Designing Android mobile app using React Native framework & Typescript."
+    },
+    {
+      "id": 3,
+      "position": "Frontend Developer",
+      "duration": "May 2023 - Aug 2023",
+      "status": "Part Time",
+      "companyName": "innData Analytics Private Limited",
+      "workInfo": "Focused on creating user-friendly web interfaces designed specifically for healthcare solutions. Specializing in layout design with MUI and Next.js to seamlessly integrate their functionalities. Collaborated with an accomplished team to work on API integration & Deployment."
+    },
+    {
+      "id": 4,
+      "position": "Software Developer",
+      "duration": "Sept 2023 - Present",
+      "status": "Full Time",
+      "companyName": "Sparrowhawk Systems",
+      "workInfo": "Integrating TRPC and Prisma in a Next.js environment, and actively gaining hands-on experience by creating and modifying Prisma models. Additionally, collaborating on the modification and expansion of the existing frontend ( using React, Next.js and MaterialUI), incorporating new features as required."
+    }
+  ]
 }

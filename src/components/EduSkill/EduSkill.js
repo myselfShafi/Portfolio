@@ -9,6 +9,7 @@ import prisma from "../../assests/images/prisma.png";
 import react from "../../assests/images/react.png";
 import redux from "../../assests/images/redux.png";
 import trpc from "../../assests/images/trpc.svg";
+import data from "../../content/data.json";
 import { useCircularProgress } from "../../hooks/circularProgress";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
@@ -16,29 +17,8 @@ import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./eduSkill.style.css";
 
 export const EduSkill = () => {
-  useIntersectObserver("education", "v-animate");
+  useIntersectObserver("edu-div", "v-animate");
   useIntersectObserver("skills", "h-animate");
-
-  const education = [
-    {
-      id: 1,
-      institue: "Vignan's Institute of Information & Technology",
-      degree: "B.Tech Undergraduate",
-      duration: "2014 - 2018",
-    },
-    {
-      id: 2,
-      institue: "Narayana Institution",
-      degree: "Intermediate - MPC",
-      duration: "2012 - 2014",
-    },
-    {
-      id: 3,
-      institue: "Kendriya Vidyalaya",
-      degree: "CBSE - High School",
-      duration: "till 2012",
-    },
-  ];
 
   const skill = [
     { id: 10, skill: "Prisma", icon: prisma },
@@ -64,7 +44,7 @@ export const EduSkill = () => {
       <h1 className="ask mb auto-m" children={"Education & Skills."} />
       <section className="grid-section">
         <div className="education">
-          {education.map((list) => {
+          {data.education?.map((list) => {
             return (
               <div key={list.id} className="edu-div">
                 <h3 className="institution" children={list.institue} />

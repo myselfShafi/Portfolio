@@ -4,31 +4,34 @@ import { LiaBirthdayCakeSolid, LiaIdCard, LiaMedapps } from "react-icons/lia";
 import { PiDevicesLight, PiTelevisionSimpleBold } from "react-icons/pi";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { SocialIcons } from "../../components/Shared/Reused-Icons/Icons";
+import data from "../../content/data.json";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Card } from "../Shared/Card/card";
 import "./about.style.css";
 
 export const About = () => {
+  useIntersectObserver("details", "h-animate");
+  useIntersectObserver("content", "v-animate");
   useIntersectObserver("abt-div", "h-animate");
   const about = [
     {
       id: 1,
       icon: <PiDevicesLight size={"3.5rem"} />,
-      title: "Web Design",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
+      title: data.about.title1,
+      info: data.about.info1,
     },
     {
       id: 2,
       icon: <LiaMedapps size={"3.5rem"} />,
-      title: "App Development",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
+      title: data.about.title2,
+      info: data.about.info2,
     },
     {
       id: 3,
       icon: <PiTelevisionSimpleBold size={"3.5rem"} />,
-      title: "App Development",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus voluptates omnis temporibus laborum eaque at ducimus consequatur.",
+      title: data.about.title3,
+      info: data.about.info3,
     },
   ];
 
@@ -37,39 +40,33 @@ export const About = () => {
       id: 1,
       icon: <LiaIdCard size={"30px"} />,
       tag: "Full Name : ",
-      details: "Md Shafi",
+      details: data.bio.name,
     },
     {
       id: 2,
       icon: <LiaBirthdayCakeSolid size={"30px"} />,
       tag: "Years Alive : ",
-      details: "27",
+      details: data.bio.age,
     },
     {
       id: 3,
       icon: <TbDeviceLandlinePhone size={"30px"} />,
       tag: "Telephone : ",
-      details: " +91 9666-370-688",
+      details: data.bio.mob,
     },
     {
       id: 4,
       icon: <GrLocation size={"30px"} />,
       tag: "Location : ",
-      details: "Andhra Pradesh, India",
+      details: data.bio.address1,
     },
     {
       id: 5,
       icon: <GrLocation size={"30px"} />,
       tag: "Interests : ",
-      details: "Gaming, Music",
+      details: data.bio.hobby,
     },
   ];
-
-  const intro =
-    "Hello, I'm Shafi, a Software Developer with frontend expertise from India. I develop and craft web elements for clients across different locations. I like work with new people. New people new Experiences.";
-
-  const intro1 =
-    "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, HTML5, CSS, and DOM.";
 
   return (
     <MainContainer id="about">
@@ -100,8 +97,8 @@ export const About = () => {
             </div>
           </div>
           <div className="content-div">
-            <p className="intro mb" children={intro} />
-            <p className="intro" children={intro1} />
+            <p className="content intro mb" children={data.bio.intro1} />
+            <p className="content intro" children={data.bio.intro2} />
           </div>
         </section>
       </div>

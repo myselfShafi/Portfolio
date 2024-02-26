@@ -3,6 +3,7 @@ import { BsMailbox2Flag } from "react-icons/bs";
 import { CiMobile3 } from "react-icons/ci";
 import { GrSend } from "react-icons/gr";
 import { IoMailOpenOutline } from "react-icons/io5";
+import data from "../../content/data.json";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
@@ -16,17 +17,17 @@ export const Contact = () => {
     {
       id: 1,
       icon: <BsMailbox2Flag size={"25px"} />,
-      info: "Railway New Colony, Visakhapatnam, AndhraPradesh 530016",
+      info: data.bio.address2,
     },
     {
       id: 2,
       icon: <IoMailOpenOutline size={"25px"} />,
-      info: "iamshafi25@gmail.com",
+      info: data.bio.mail,
     },
     {
       id: 3,
       icon: <CiMobile3 size={"25px"} />,
-      info: "+91 9666-370-688",
+      info: data.bio.mob,
     },
   ];
   return (
