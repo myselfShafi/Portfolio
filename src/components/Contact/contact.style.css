@@ -29,7 +29,11 @@
 .tag {
     font-size: 20px;
     margin:  1.5rem;
+    display: flex;
+    gap: 10px;
 }
+
+
 
 .outline{
     width: 4rem;
@@ -85,13 +89,16 @@ input, textarea {
     &:focus {
         outline-color: var(--text-preset-5);
     }
+    &:disabled {
+        border-color: var(--loader-3);
+    }
 }
 
 ::placeholder, ::-webkit-input-placeholder {
     color: var(--text-preset-3);
 }
 
-input#subject, textarea#comment {
+input#subject, textarea#comment, form p {
     grid-column: span 2;
 }
 
@@ -108,5 +115,18 @@ textarea {
     }
     input#subject, textarea#comment {
         grid-column: unset
+    }
+}
+
+.loader {
+    animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+    from {
+    transform: rotateZ(0deg);
+    }
+    to {
+    transform: rotateZ(360deg);
     }
 }

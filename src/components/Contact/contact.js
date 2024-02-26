@@ -1,17 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
+import { BiErrorCircle, BiLoaderCircle } from "react-icons/bi";
 import { BsMailbox2Flag } from "react-icons/bs";
 import { CiMobile3 } from "react-icons/ci";
 import { GrSend } from "react-icons/gr";
-import { IoMailOpenOutline } from "react-icons/io5";
+import {
+  IoCheckmarkDoneCircleOutline,
+  IoMailOpenOutline,
+} from "react-icons/io5";
 import data from "../../content/data.json";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./contact.style.css";
 
+const URL = process.env.SCRIPT_URL;
+
 export const Contact = () => {
   useIntersectObserver("contact-details", "h-animate");
   useIntersectObserver("contact-form", "h-animate");
+
+  const [submitted, setSubmitted] = useState(false);
+  const [loader, setLoader] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const submit = (e) => {
+    const formElement = document.querySelector("#form-data");
+    const form = new FormData(formElement);
+    e.preventDefault();
+    console.log("running...");
+    setLoader(true);
+    fetch(URL, { method: "Post", body: form })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data === "") {
+          setSuccess(false);
+          setSubmitted(true);
+          return;
+        }
+        setSuccess(true);
+        setSubmitted(true);
+        console.log({ data });
+      })
+      .catch((error) => {
+        console.log({ error });
+        setSuccess(false);
+        setSubmitted(true);
+      })
+      .finally(() => {
+        setLoader(false);
+        console.log("completed...");
+      });
+  };
 
   const contacts = [
     {
@@ -30,6 +69,7 @@ export const Contact = () => {
       info: data.bio.mob,
     },
   ];
+
   return (
     <MainContainer id="contact-me" className="flex-div" noBorder={true}>
       <h1
@@ -55,22 +95,71 @@ export const Contact = () => {
         </div>
         <div className="contact-form">
           <h1 children={"What's on your Mind?"} />
-          <form>
-            <input type="text" id="name" placeholder="Full Name" />
-            <input type="email" id="email" placeholder="Email" />
-            <input type="text" id="subject" placeholder="Subject" />
+          <form id="form-data" onSubmit={(e) => submit(e)}>
+            <input
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              required
+              autoComplete="off"
+              disabled={submitted}
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              required
+              autoComplete="off"
+              disabled={submitted}
+            />
+            <input
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              required
+              autoComplete="off"
+              disabled={submitted}
+            />
             <textarea
               rows={4}
               type="text"
               id="comment"
               maxLength={300}
               placeholder="Type Comment"
+              required
+              autoComplete="off"
+              disabled={submitted}
             />
-            <Button
-              children={"Share Your Thoughts"}
-              icon={<GrSend />}
-              onClick={() => alert("sent!")}
-            />
+            {!submitted ? (
+              <Button
+                type="submit"
+                children={
+                  loader ? "Sharing Thoughts..." : "Share Your Thoughts"
+                }
+                icon={
+                  loader ? <BiLoaderCircle className="loader" /> : <GrSend />
+                }
+                disabled={loader}
+              />
+            ) : (
+              <p className="auto-m tag">
+                <span
+                  children={
+                    success ? (
+                      <IoCheckmarkDoneCircleOutline
+                        size={"30px"}
+                        color="green"
+                      />
+                    ) : (
+                      <BiErrorCircle size={"30px"} color="red" />
+                    )
+                  }
+                />
+                {success
+                  ? "Your thoughts are in! Appreciate your time. I'll circle back shortly!"
+                  : " Oops! Server's acting funky. Give it another shot later. In meantime, Ping me on socials if needed!"}
+              </p>
+            )}
           </form>
         </div>
       </section>

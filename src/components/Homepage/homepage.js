@@ -28,6 +28,7 @@ export const Homepage = () => {
         <p children={description} className="para v-animate" />
         <Button
           downloadLink={cv}
+          type="button"
           children={"Download CV"}
           icon={<FaDownload />}
           className={"cv v-animate"}

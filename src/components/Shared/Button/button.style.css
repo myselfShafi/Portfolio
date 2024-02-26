@@ -17,9 +17,14 @@
 
   }
 
-  .btn-cv:hover {
+  .btn-cv:hover, .btn-cv:disabled {
     background: var(--bg-preset-2);
     color: var(--text-preset-6);
+  }
+
+  .btn-cv:disabled {
+    opacity: .75;
+    cursor: unset;
   }
 
   

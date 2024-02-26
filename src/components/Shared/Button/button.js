@@ -12,12 +12,12 @@ export const Button = ({
     <div>
       {downloadLink ? (
         <a href={downloadLink} download>
-          <button type="button" className={`btn-cv ${className}`} {...others}>
+          <button className={`btn-cv ${className}`} {...others}>
             {children} {icon && icon}
           </button>
         </a>
       ) : (
-        <button type="button" className={`btn-cv ${className}`} {...others}>
+        <button className={`btn-cv ${className}`} {...others}>
           {children} {icon && icon}
         </button>
       )}
