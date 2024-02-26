@@ -113,7 +113,7 @@ textarea {
     form {
         grid-template-columns: 1fr;       
     }
-    input#subject, textarea#comment {
+    input#subject, textarea#comment, form p {
         grid-column: unset
     }
 }
