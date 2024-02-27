@@ -3,15 +3,52 @@
     width: 10rem;
     height: auto;
     display: flex;
-    flex-direction: column;
-    position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
     border-radius: 10px;
     transition: box-shadow ease-in .2s, background .3s ease-in-out;
-    z-index: 10;
     background: var(--gradient-preset-3);
+}
+
+.sbar-body, .sbar-small {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    z-index: 10;
+}
+
+.sbar-small {
+    display: none;
+    bottom: 5rem;
+    border-radius: 3rem 0;
+    width: 5rem;
+    height: 50vh;
+    background: var(--gradient-preset-4);
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform .3s linear;
+}
+
+.sbar-small.open {
+    transform: translateX(0);
+}
+
+.opener {
+    position: absolute;
+    background: var(--gradient-preset-4);
+    height: 5rem;
+    width: 2rem;
+    right: -2rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+.opener.open {
+scale: .5 1;
+  right: -1.5rem; 
 }
 
 .logo-img {
@@ -66,6 +103,12 @@ font-family: "Leckerli One", cursive !important;
     .logo-small {
         display: block;
     }
+    .sbar-small {
+        display: flex;
+    }
+    .sbar-icon-div {
+        padding: 10px 0;
+    }    
 }
 
 @media (max-width: 1200px) {
@@ -88,7 +131,7 @@ font-size: .8rem;    }
         display: block;
     }
     .toggle-btn {
-        transform: rotateZ(-90deg) translateX(1rem);
+       transform: rotateZ(-90deg) translateX( 1rem);
     }
 }
 
@@ -116,18 +159,13 @@ font-size: .8rem;    }
     }
 }
 
-.theme-btn {
-    background: var(--text-preset-1);
-    border-radius: 10px;
-}
-
 .toggle-btn {
     display: block;
     background: var(--bg-preset-1);
     color: var(--bg-preset-1);
-    width: 90px;
-    height: 45px;
-    border-radius: 90px;
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
     margin: 0 auto 20px;
     cursor: pointer;
     position: relative;
@@ -135,26 +173,26 @@ font-size: .8rem;    }
 
 .toggle-btn > svg:first-child, .toggle-btn > svg:last-child {
     position: absolute;
-    top: 12px;
+    top: .78rem;
     z-index: 5;
 }
 
 .toggle-btn > svg:first-child {
-    left: 12px;
+    left: .6rem;
 }
 
 .toggle-btn > svg:last-child {
-    right: 12px;
+    right: .7rem;
 }
 
 .toggle-btn::after {
 content: '';
 position: absolute;
-width: 35px;
-height: 35px;
-top: 5px;
-right: 5px;
-border-radius: 35px;
+width: 1.95rem;
+height: 1.95rem;
+top: .3rem;
+right: .3rem;
+border-radius: 1.95rem;
 background: var(--text-preset-1);
 transition: all .2s linear;
 }

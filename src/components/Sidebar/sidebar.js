@@ -9,7 +9,7 @@ import { useTheme } from "../../contexts/themeContext";
 import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./sidebar.style.css";
 
-const Sidebar = () => {
+const IconSection = () => {
   const { toggleTheme } = useTheme();
 
   const abc = () => {
@@ -56,6 +56,32 @@ const Sidebar = () => {
       href: "#contact-me",
     },
   ];
+  return (
+    <>
+      <div className="sbar-icon-div">
+        {icons.map((item) => {
+          return (
+            <div key={item.id}>
+              <Tooltip children={item.icon} text={item.text} href={item.href} />
+            </div>
+          );
+        })}
+      </div>
+
+      <input id="toggle-theme" type="checkbox" />
+      <label htmlFor="toggle-theme" className="toggle-btn" onClick={abc}>
+        <ImSun size={"1rem"} />
+        <BsMoonStarsFill size={"1rem"} />
+      </label>
+    </>
+  );
+};
+
+const Sidebar = () => {
+  const click = () => {
+    document.querySelector(".sbar-small").classList.toggle("open");
+    document.querySelector(".opener").classList.toggle("open");
+  };
 
   return (
     <>
@@ -67,25 +93,11 @@ const Sidebar = () => {
             <span children={"Sh."} />
           </h1>
         </div>
-        <div className="sbar-icon-div">
-          {icons.map((item) => {
-            return (
-              <div key={item.id}>
-                <Tooltip
-                  children={item.icon}
-                  text={item.text}
-                  href={item.href}
-                />
-              </div>
-            );
-          })}
-        </div>
-
-        <input id="toggle-theme" type="checkbox" />
-        <label htmlFor="toggle-theme" className="toggle-btn" onClick={abc}>
-          <ImSun size={"20px"} />
-          <BsMoonStarsFill size={"20px"} />
-        </label>
+        <IconSection />
+      </div>
+      <div className="sbar-small">
+        <div className="opener" onClick={click} />
+        <IconSection />
       </div>
     </>
   );
