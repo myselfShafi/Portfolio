@@ -1,6 +1,7 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
 import cv from "../../assests/Resume-.pdf";
+import profile from "../../assests/images/dp.png";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./homepage.style.css";
@@ -34,7 +35,10 @@ export const Homepage = () => {
           className={"cv v-animate"}
         />
       </header>
-      <div className="wave-bg" />
+      <div className="wave-bg">
+        <div className="wave-div" />
+        <img alt="profile" src={profile} />
+      </div>
     </MainContainer>
   );
 };
