@@ -13,7 +13,7 @@ import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 import "./contact.style.css";
 
-const URL = process.env.SCRIPT_URL;
+const URL = process.env.REACT_APP_SCRIPT_URL;
 
 export const Contact = () => {
   useIntersectObserver("contact-details", "h-animate");
@@ -24,12 +24,10 @@ export const Contact = () => {
   const [success, setSuccess] = useState(false);
 
   const submit = (e) => {
-    const formElement = document.querySelector("#form-data");
-    const form = new FormData(formElement);
+    const formData = new FormData(e.target);
     e.preventDefault();
-    console.log("running...");
     setLoader(true);
-    fetch(URL, { method: "Post", body: form })
+    fetch(URL, { method: "Post", body: formData })
       .then((res) => res.json())
       .then((data) => {
         if (data === "") {
@@ -39,7 +37,6 @@ export const Contact = () => {
         }
         setSuccess(true);
         setSubmitted(true);
-        console.log({ data });
       })
       .catch((error) => {
         console.log({ error });
@@ -48,7 +45,6 @@ export const Contact = () => {
       })
       .finally(() => {
         setLoader(false);
-        console.log("completed...");
       });
   };
 
@@ -99,6 +95,7 @@ export const Contact = () => {
             <input
               type="text"
               id="name"
+              name="name"
               placeholder="Full Name"
               required
               autoComplete="off"
@@ -107,6 +104,7 @@ export const Contact = () => {
             <input
               type="email"
               id="email"
+              name="email"
               placeholder="Email"
               required
               autoComplete="off"
@@ -115,6 +113,7 @@ export const Contact = () => {
             <input
               type="text"
               id="subject"
+              name="subject"
               placeholder="Subject"
               required
               autoComplete="off"
@@ -124,6 +123,7 @@ export const Contact = () => {
               rows={4}
               type="text"
               id="comment"
+              name="comment"
               maxLength={300}
               placeholder="Type Comment"
               required
