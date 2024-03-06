@@ -12,7 +12,7 @@
     "mail": "iamshafi25@gmail.com",
     "address1": "Andhra Pradesh, India",
     "address2": "Railway New Colony, Visakhapatnam, AndhraPradesh 530016",
-    "hobby": "Gaming, Music",
+    "hobby": ["Learn New Tech", "Music", "Frontend Frameworks"],
     "intro1": "Hello, I'm Shafi, a Software Developer with frontend expertise from India. I develop and craft web elements for clients across different locations. I like work with new people. New people new Experiences.",
     "intro2": "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, HTML5, CSS, and DOM."
   },

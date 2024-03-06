@@ -25,7 +25,7 @@
 }
 
 .info-div ul li span:nth-child(2) {
-    width: 38%
+    flex-grow: 1;
 }
 
 .intro {
@@ -45,15 +45,17 @@ margin-bottom: 1rem;
     background: var(--accent-preset-3);
 }
 
-.details span:first-child {
+.details span:first-child:not(.details div span:first-child) {
     display: inline-flex;
    color: var(--accent-preset-2);
    margin-right: .5rem;
 }
 
-.details span:last-child {
+.last-span {
     font-weight: 400;
     color: var(--text-preset-3);
+    display: block;
+    text-align: end;
 }
 
 @media (max-width: 480px) {

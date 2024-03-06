@@ -45,7 +45,7 @@ export const About = () => {
     {
       id: 2,
       icon: <LiaBirthdayCakeSolid size={"30px"} />,
-      tag: "Years Alive : ",
+      tag: "How Old? : ",
       details: data.bio.age,
     },
     {
@@ -79,7 +79,15 @@ export const About = () => {
                 <li className="intro details" key={data.id}>
                   <span children={data.icon} />
                   <span children={data.tag} />
-                  <span children={data.details} />
+                  {Array.isArray(data.details) ? (
+                    <div>
+                      {data.details?.map((list, idx) => (
+                        <span key={idx} children={list} className="last-span" />
+                      ))}
+                    </div>
+                  ) : (
+                    <span children={data.details} className="last-span" />
+                  )}
                 </li>
               ))}
             </ul>
