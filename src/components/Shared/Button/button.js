@@ -5,13 +5,15 @@ export const Button = ({
   children,
   className,
   icon,
-  downloadLink,
+  redirectURL,
+  download,
+  target,
   ...others
 }) => {
   return (
     <div>
-      {downloadLink ? (
-        <a href={downloadLink} download>
+      {redirectURL ? (
+        <a href={redirectURL} download={download} target={target}>
           <button className={`btn-cv ${className}`} {...others}>
             {children} {icon && icon}
           </button>

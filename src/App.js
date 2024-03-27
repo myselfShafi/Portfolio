@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer/footer";
 import { Homepage } from "./components/Homepage/homepage";
 import Navbar from "./components/Navbar/navbar";
 import { Preloader } from "./components/Preloader/preloader";
+import { Projects } from "./components/Projects/projects";
 import Sidebar from "./components/Sidebar/sidebar";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <About />
         <Experience />
         <EduSkill />
+        <Projects />
         <Contact />
         <Footer />
         <ScrollTop />

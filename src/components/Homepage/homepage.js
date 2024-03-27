@@ -28,8 +28,9 @@ export const Homepage = () => {
         </div>
         <p children={description} className="para v-animate" />
         <Button
-          downloadLink={cv}
+          redirectURL={cv}
           type="button"
+          download={true}
           children={"Download CV"}
           icon={<FaDownload />}
           className={"cv v-animate"}

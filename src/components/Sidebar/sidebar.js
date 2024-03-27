@@ -5,6 +5,7 @@ import { ImSun } from "react-icons/im";
 import { IoMdPaper } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import { PiLightbulbLight, PiPhoneOutgoing } from "react-icons/pi";
+import { SiBlueprint } from "react-icons/si";
 import { useTheme } from "../../contexts/themeContext";
 import { Tooltip } from "../Shared/Tooltip/tooltip";
 import "./sidebar.style.css";
@@ -51,6 +52,12 @@ const IconSection = () => {
     },
     {
       id: 5,
+      icon: <SiBlueprint className={`sbar-icon`} size={"30px"} />,
+      text: "Projects",
+      href: "#my-projects",
+    },
+    {
+      id: 6,
       icon: <PiPhoneOutgoing className={`sbar-icon`} size={"30px"} />,
       text: "Contact",
       href: "#contact-me",
