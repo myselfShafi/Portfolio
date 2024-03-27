@@ -13,11 +13,15 @@ import pf2 from "../../assests/images/portfolio-2.png";
 import react from "../../assests/images/react.png";
 import swiper from "../../assests/images/swiper-logo.svg";
 import data from "../../content/data.json";
+import useIntersectObserver from "../../hooks/useIntersectObserver";
 import { Customcarousel } from "../Common/Custom-carousel/customcarousel";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
 
 export const Projects = () => {
+  useIntersectObserver("context-div", "h-animate");
+  useIntersectObserver("img-div", "v-animate");
+
   const projects = [
     {
       title: "Plantopia",
