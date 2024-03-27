@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.713fd321.css",
-    "main.js": "/Portfolio/static/js/main.53e618b2.js",
+    "main.css": "/Portfolio/static/css/main.b07ce63a.css",
+    "main.js": "/Portfolio/static/js/main.634412b9.js",
     "static/media/dp.png": "/Portfolio/static/media/dp.0dc1483483b963217abf.png",
     "static/media/plantopia-1.png": "/Portfolio/static/media/plantopia-1.d53c489b2eed7a5cdea7.png",
     "static/media/plantopia-3.png": "/Portfolio/static/media/plantopia-3.a8bfc92db2a0df075481.png",
@@ -21,11 +21,11 @@
     "static/media/swiper-logo.svg": "/Portfolio/static/media/swiper-logo.4b89be450e010142a0c77312d3d7d11d.svg",
     "static/media/trpc.svg": "/Portfolio/static/media/trpc.697f72cff0585fc778ab470680365e14.svg",
     "index.html": "/Portfolio/index.html",
-    "main.713fd321.css.map": "/Portfolio/static/css/main.713fd321.css.map",
-    "main.53e618b2.js.map": "/Portfolio/static/js/main.53e618b2.js.map"
+    "main.b07ce63a.css.map": "/Portfolio/static/css/main.b07ce63a.css.map",
+    "main.634412b9.js.map": "/Portfolio/static/js/main.634412b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.713fd321.css",
-    "static/js/main.53e618b2.js"
+    "static/css/main.b07ce63a.css",
+    "static/js/main.634412b9.js"
   ]
 }
