@@ -71,7 +71,6 @@ export const Projects = () => {
                   {each?.url && (
                     <Button
                       redirectURL={each?.url}
-                      className={"redirect"}
                       children={"Visit Site"}
                       target="_blank"
                     />

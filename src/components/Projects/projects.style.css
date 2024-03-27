@@ -15,6 +15,7 @@
 .context-div {
     justify-content: center;
     padding: 0 10px;
+    gap: 1rem;
 }
 
 .context-div h3 {
@@ -45,8 +46,4 @@
 .img-div {
     min-height: 20rem;
     height: 100%;
-}
-
-.redirect {
-    margin-top: 1rem;
 }

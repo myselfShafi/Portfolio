@@ -17,6 +17,7 @@ export const Customcarousel = ({ children, array, indicator }) => {
         {array.map((item, index) =>
           indicator === "bullet" ? (
             <div
+              key={index}
               onClick={() => setActiveIdx(index)}
               className="bullets"
               style={{
