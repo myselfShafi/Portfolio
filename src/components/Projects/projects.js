@@ -1,6 +1,7 @@
 import "./projects.style.css";
 
 import React from "react";
+import bootstrap from "../../assests/images/bootstrap.png";
 import css from "../../assests/images/css.png";
 import js from "../../assests/images/js.png";
 import mui from "../../assests/images/mui.png";
@@ -11,6 +12,9 @@ import p3 from "../../assests/images/plantopia-3.png";
 import pf1 from "../../assests/images/portfolio-1.png";
 import pf2 from "../../assests/images/portfolio-2.png";
 import react from "../../assests/images/react.png";
+import reactflow from "../../assests/images/reactflow.png";
+import rf1 from "../../assests/images/rf1.png";
+import rf2 from "../../assests/images/rf2.png";
 import swiper from "../../assests/images/swiper-logo.svg";
 import data from "../../content/data.json";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
@@ -33,6 +37,18 @@ export const Projects = () => {
         { skill: "React JS", icon: react },
         { skill: "Material UI", icon: mui },
         { skill: "Swiper.js", icon: swiper },
+        { skill: "Javascript", icon: js },
+      ],
+    },
+    {
+      title: "Chatbot Flow Builder",
+      text: "A simple React-Flow template which allows users to create chatbot flows by connecting multiple messages together to determine the order of execution.",
+      imgs: [rf1, rf2],
+      url: data.projects_url.ReactFlowTemplate,
+      tools: [
+        { skill: "React Flow", icon: reactflow },
+        { skill: "Bootstrap", icon: bootstrap },
+        { skill: "React JS", icon: react },
         { skill: "Javascript", icon: js },
       ],
     },
@@ -80,11 +96,19 @@ export const Projects = () => {
                   <Customcarousel array={each.imgs}>
                     {each.imgs?.map((img, idx) => {
                       return (
-                        <div key={idx} style={{ display: "inline-flex" }}>
+                        <div
+                          key={idx}
+                          style={{
+                            display: "inline-flex",
+                          }}
+                        >
                           <img
                             src={img}
                             alt={`${img}_ss`}
-                            style={{ width: "100%", height: "100%" }}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                            }}
                           />
                         </div>
                       );
