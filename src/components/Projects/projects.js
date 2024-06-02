@@ -1,11 +1,18 @@
 import "./projects.style.css";
 
 import React from "react";
+import b2 from "../../assests/images/Blog-Space (1).png";
+import b3 from "../../assests/images/Blog-Space (3).png";
+import b1 from "../../assests/images/Blog-Space.png";
 import bootstrap from "../../assests/images/bootstrap.png";
 import css from "../../assests/images/css.png";
 import js from "../../assests/images/js.png";
 import mui from "../../assests/images/mui.png";
 import next from "../../assests/images/nextjs.png";
+import redux from "../../assests/images/redux.png";
+import router from "../../assests/images/router.svg";
+import tailwind from "../../assests/images/tailwind.svg";
+
 import p1 from "../../assests/images/plantopia-1.png";
 import p2 from "../../assests/images/plantopia-2.png";
 import p3 from "../../assests/images/plantopia-3.png";
@@ -27,6 +34,19 @@ export const Projects = () => {
   useIntersectObserver("img-div", "v-animate");
 
   const projects = [
+    {
+      title: "Blog Space",
+      text: "A dynamic blogging platform for exploring diverse blogs and effortlessly create, edit, and manage posts with the TinyMCE rich-text editor",
+      imgs: [b3, b1, b2],
+      url: data.projects_url.blogSpace,
+      tools: [
+        { skill: "React JS", icon: react },
+        { skill: "Tailwind CSS", icon: tailwind },
+        { skill: "Javascript", icon: js },
+        { skill: "React Router DOM", icon: router },
+        { skill: "Redux Toolkit", icon: redux },
+      ],
+    },
     {
       title: "Plantopia",
       text: "A digital e-commerce focused on plants powered by Next.js and customized MaterialUI theming.",
