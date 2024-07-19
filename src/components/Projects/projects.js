@@ -9,6 +9,8 @@ import css from "../../assests/images/css.png";
 import js from "../../assests/images/js.png";
 import mui from "../../assests/images/mui.png";
 import next from "../../assests/images/nextjs.png";
+import postgresql from "../../assests/images/postgresql.svg";
+import prisma from "../../assests/images/prisma.png";
 import redux from "../../assests/images/redux.png";
 import router from "../../assests/images/router.svg";
 import tailwind from "../../assests/images/tailwind.svg";
@@ -36,7 +38,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Blog Space",
-      text: "A dynamic blogging platform for exploring diverse blogs and effortlessly create, edit, and manage posts with the TinyMCE rich-text editor",
+      text: "A dynamic blogging platform for exploring diverse blogs and effortlessly create, edit, and manage posts with the TinyMCE rich-text editor.",
       imgs: [b3, b1, b2],
       url: data.projects_url.blogSpace,
       tools: [
@@ -49,15 +51,16 @@ export const Projects = () => {
     },
     {
       title: "Plantopia",
-      text: "A digital e-commerce focused on plants powered by Next.js and customized MaterialUI theming.",
+      text: "A digital e-commerce for plants, with a dynamic backend powered by Prisma ORM and PostgreSQL, built on Next.js with customized MaterialUI theming.",
       imgs: [p1, p2, p3],
       url: data.projects_url.plantopia,
       tools: [
         { skill: "Next JS", icon: next },
         { skill: "React JS", icon: react },
         { skill: "Material UI", icon: mui },
+        { skill: "Prisma ORM", icon: prisma },
+        { skill: "Postgresql", icon: postgresql },
         { skill: "Swiper.js", icon: swiper },
-        { skill: "Javascript", icon: js },
       ],
     },
     {

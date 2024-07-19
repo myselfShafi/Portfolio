@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
-import cv from "../../assests/Resume-.pdf";
+import cv from "../../assests/Shafi_CV.pdf";
 import profile from "../../assests/images/dp.png";
 import { MainContainer } from "../Common/Main-container/MainContainer";
 import { Button } from "../Shared/Button/button";
