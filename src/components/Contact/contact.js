@@ -84,7 +84,7 @@ export const Contact = () => {
             return (
               <div className="contact-info" key={list.id}>
                 <div className="outline" children={list.icon} />
-                <h3 children={list.info} className="contact-para" />
+                <p children={list.info} className="contact-para" />
               </div>
             );
           })}

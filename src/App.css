@@ -17,7 +17,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  font-size: 110%;
   scrollbar-width: thin;
   scrollbar-color: var(--loader-4) transparent;
 }
@@ -73,7 +72,7 @@ html {
 }
 
 .ask {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 800;
   color: var(--accent-preset-5);
   font-family: "League Spartan", sans-serif;

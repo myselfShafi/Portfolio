@@ -29,7 +29,7 @@
 }
 
 .intro {
-    font-size: 1.25rem;
+    font-size: 1rem;
   color: var(--text-preset-4);
   line-height: 2;
 }
@@ -92,8 +92,8 @@ margin-bottom: 1rem;
 }
 
 .social-div .social-icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2.6rem;
+    width: 2.6rem;
     background-color: var(--accent-preset-4);
     color: var(--text-preset-2);
     display: flex;

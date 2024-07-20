@@ -31,7 +31,7 @@
     color: var(--text-preset-6);
     background-color: var(--accent-preset-2);
     border-radius: 5px;
-    padding: 8px 10px;
+    padding: 6px 8px;
     width: fit-content;
     font-weight: 600;
 }
@@ -39,7 +39,7 @@
 .exp-para {
     line-height: 2;
     margin-bottom: 50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-preset-3);
 }
 

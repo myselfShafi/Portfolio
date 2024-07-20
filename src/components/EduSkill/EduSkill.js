@@ -8,6 +8,7 @@ import next from "../../assests/images/nextjs.png";
 import prisma from "../../assests/images/prisma.png";
 import react from "../../assests/images/react.png";
 import redux from "../../assests/images/redux.png";
+import tailwind from "../../assests/images/tailwind.svg";
 import trpc from "../../assests/images/trpc.svg";
 import data from "../../content/data.json";
 import { useCircularProgress } from "../../hooks/circularProgress";
@@ -21,7 +22,8 @@ export const EduSkill = () => {
   useIntersectObserver("skills", "h-animate");
 
   const skill = [
-    { id: 10, skill: "Prisma", icon: prisma },
+    { id: 11, skill: "Tailwind CSS", icon: tailwind },
+    { id: 10, skill: "Bootstrap", icon: bootstrap },
     { id: 9, skill: "Trpc", icon: trpc },
     { id: 8, skill: "Redux", icon: redux },
     { id: 7, skill: "Javascript", icon: js },
@@ -30,7 +32,7 @@ export const EduSkill = () => {
 
     { id: 4, skill: "React JS", value: "90", icon: react },
     { id: 3, skill: "Next JS", value: "78", icon: next },
-    { id: 2, skill: "Bootstrap", value: "85", icon: bootstrap },
+    { id: 2, skill: "Prisma", value: "80", icon: prisma },
     { id: 1, skill: "Material UI", value: "90", icon: mui },
   ];
 

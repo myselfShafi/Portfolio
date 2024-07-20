@@ -22,12 +22,12 @@
 }
 
 .connect {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 800;
 }
 
 .tag {
-    font-size: 20px;
+    font-size: 18px;
     margin:  1.5rem;
     display: flex;
     gap: 10px;
@@ -69,7 +69,6 @@
     max-width: 60%;
     color: var(--text-preset-3);
     font-weight: 400;
-
 }
 
 form {
@@ -82,7 +81,7 @@ form {
 input, textarea {
     background: transparent;
     border: .5px solid var(--text-preset-3);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
     padding: 15px;
     color: var(--text-preset-1);
@@ -106,7 +105,7 @@ textarea {
     resize: none;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1200px) {
     .contact-section {
     flex-direction: column;
     }

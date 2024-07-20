@@ -10,7 +10,7 @@
    align-items: center;
    position: relative;
     transition: transform .5s ease;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .icon-card {
@@ -18,8 +18,8 @@
     width: fit-content;
     background: var(--gradient-preset-1);
     color: var(--text-preset-6);
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     justify-content: center;
     align-items: center;
     border-radius: 50% 0 50% 50%;
@@ -47,7 +47,7 @@
 }
 .card-detail h1 {
     color: var(--text-preset-2);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 1rem 0;
 }
 

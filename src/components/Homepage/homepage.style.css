@@ -42,12 +42,12 @@
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 1.4rem;
   animation-delay: 0.1s;
 }
 
 .name {
-  font-size: 5rem;
+  font-size: 3.5rem;
   animation-delay: 0.2s;
   line-height: 1;
 }
@@ -63,13 +63,13 @@
 
 .title-div {
   position: relative;
-  height: 5rem;
+  height: 4rem;
   overflow: hidden;
   text-wrap: nowrap;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -102,7 +102,7 @@
 }
 
 .para {
-  font-size: 1.25rem;
+  font-size: 1rem;
   max-width: 40rem;
   animation-delay: 0.4s;
   color: var(--text-preset-4);

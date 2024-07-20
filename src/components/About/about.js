@@ -17,19 +17,19 @@ export const About = () => {
   const about = [
     {
       id: 1,
-      icon: <PiDevicesLight size={"3.5rem"} />,
+      icon: <PiDevicesLight size={"2.8rem"} />,
       title: data.about.title1,
       info: data.about.info1,
     },
     {
       id: 2,
-      icon: <LiaMedapps size={"3.5rem"} />,
+      icon: <LiaMedapps size={"2.8rem"} />,
       title: data.about.title2,
       info: data.about.info2,
     },
     {
       id: 3,
-      icon: <PiTelevisionSimpleBold size={"3.5rem"} />,
+      icon: <PiTelevisionSimpleBold size={"2.8rem"} />,
       title: data.about.title3,
       info: data.about.info3,
     },
@@ -38,31 +38,31 @@ export const About = () => {
   const personalInfo = [
     {
       id: 1,
-      icon: <LiaIdCard size={"30px"} />,
+      icon: <LiaIdCard size={"24px"} />,
       tag: "Full Name : ",
       details: data.bio.name,
     },
     {
       id: 2,
-      icon: <LiaBirthdayCakeSolid size={"30px"} />,
+      icon: <LiaBirthdayCakeSolid size={"24px"} />,
       tag: "How Old? : ",
       details: data.bio.age,
     },
     {
       id: 3,
-      icon: <TbDeviceLandlinePhone size={"30px"} />,
+      icon: <TbDeviceLandlinePhone size={"24px"} />,
       tag: "Telephone : ",
       details: data.bio.mob,
     },
     {
       id: 4,
-      icon: <GrLocation size={"30px"} />,
+      icon: <GrLocation size={"24px"} />,
       tag: "Location : ",
       details: data.bio.address1,
     },
     {
       id: 5,
-      icon: <GrLocation size={"30px"} />,
+      icon: <GrLocation size={"24px"} />,
       tag: "Interests : ",
       details: data.bio.hobby,
     },

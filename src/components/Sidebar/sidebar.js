@@ -28,37 +28,37 @@ const IconSection = () => {
   const icons = [
     {
       id: 1,
-      icon: <IoHomeOutline className={`sbar-icon`} size={"30px"} />,
+      icon: <IoHomeOutline className={`sbar-icon`} size={"25px"} />,
       text: "Home",
       href: "#home",
     },
     {
       id: 2,
-      icon: <GoPerson className={`sbar-icon`} size={"30px"} />,
+      icon: <GoPerson className={`sbar-icon`} size={"25px"} />,
       text: "About",
       href: "#about",
     },
     {
       id: 3,
-      icon: <IoMdPaper className={`sbar-icon`} size={"30px"} />,
+      icon: <IoMdPaper className={`sbar-icon`} size={"25px"} />,
       text: "Resume",
       href: "#resume",
     },
     {
       id: 4,
-      icon: <PiLightbulbLight className={`sbar-icon`} size={"30px"} />,
+      icon: <PiLightbulbLight className={`sbar-icon`} size={"25px"} />,
       text: "Skills",
       href: "#education-skills",
     },
     {
       id: 5,
-      icon: <SiBlueprint className={`sbar-icon`} size={"30px"} />,
+      icon: <SiBlueprint className={`sbar-icon`} size={"25px"} />,
       text: "Projects",
       href: "#my-projects",
     },
     {
       id: 6,
-      icon: <PiPhoneOutgoing className={`sbar-icon`} size={"30px"} />,
+      icon: <PiPhoneOutgoing className={`sbar-icon`} size={"25px"} />,
       text: "Contact",
       href: "#contact-me",
     },
