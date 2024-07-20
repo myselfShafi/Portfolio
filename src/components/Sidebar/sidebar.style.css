@@ -178,7 +178,7 @@ font-size: .8rem;    }
 }
 
 .toggle-btn > svg:first-child {
-    left: .6rem;
+    left: .7rem;
 }
 
 .toggle-btn > svg:last-child {
@@ -204,7 +204,7 @@ input#toggle-theme {
 }
 
 input:checked + .toggle-btn::after {
-    right: 85px;
+    right: 76px;
     transform: translateX(100%);
 }
 
