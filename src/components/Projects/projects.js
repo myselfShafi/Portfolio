@@ -14,7 +14,13 @@ import prisma from "../../assests/images/prisma.png";
 import redux from "../../assests/images/redux.png";
 import router from "../../assests/images/router.svg";
 import tailwind from "../../assests/images/tailwind.svg";
+import ts from "../../assests/images/ts.png";
 
+import reanimated from "../../assests/images/reanimated.svg";
+
+import bite1 from "../../assests/images/bitecircle-1.png";
+import bite2 from "../../assests/images/bitecircle-2.png";
+import bite3 from "../../assests/images/bitecircle-3.png";
 import p1 from "../../assests/images/plantopia-1.png";
 import p2 from "../../assests/images/plantopia-2.png";
 import p3 from "../../assests/images/plantopia-3.png";
@@ -24,6 +30,8 @@ import react from "../../assests/images/react.png";
 import reactflow from "../../assests/images/reactflow.png";
 import rf1 from "../../assests/images/rf1.png";
 import rf2 from "../../assests/images/rf2.png";
+import rnav from "../../assests/images/rnav.svg";
+import rnp from "../../assests/images/rnp.svg";
 import swiper from "../../assests/images/swiper-logo.svg";
 import data from "../../content/data.json";
 import useIntersectObserver from "../../hooks/useIntersectObserver";
@@ -61,6 +69,19 @@ export const Projects = () => {
         { skill: "Prisma ORM", icon: prisma },
         { skill: "Postgresql", icon: postgresql },
         { skill: "Swiper.js", icon: swiper },
+      ],
+    },
+    {
+      title: "BiteCircle",
+      text: "A go-to social Mobile platform for all things food-related. Built with 𝗥𝗲𝗮𝗰𝘁 𝗡𝗮𝘁𝗶𝘃𝗲, 𝗧𝘆𝗽𝗲𝗦𝗰𝗿𝗶𝗽𝘁, and a suite of sophisticated libraries and packages.",
+      imgs: [bite3, bite1, bite2],
+      url: data.projects_url.biteCircle,
+      tools: [
+        { skill: "React Native", icon: react },
+        { skill: "Typescript", icon: ts },
+        { skill: "React Native Paper", icon: rnp },
+        { skill: "Reanimated3", icon: reanimated },
+        { skill: "React Navigation", icon: rnav },
       ],
     },
     {
@@ -110,7 +131,11 @@ export const Projects = () => {
                   {each?.url && (
                     <Button
                       redirectURL={each?.url}
-                      children={"Visit Site"}
+                      children={
+                        each?.title === "BiteCircle"
+                          ? "Download App"
+                          : "Visit Site"
+                      }
                       target="_blank"
                     />
                   )}
