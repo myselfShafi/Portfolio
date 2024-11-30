@@ -14,7 +14,7 @@
     "address2": "Railway New Colony, Visakhapatnam, AndhraPradesh 530016",
     "hobby": ["Learn New Tech", "Music", "Frontend Frameworks"],
     "intro1": "Hello, I'm Shafi, a Software Developer with frontend expertise from India. I develop and craft web elements for clients across different locations. I like work with new people. New people new Experiences.",
-    "intro2": "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, HTML5, CSS, and DOM."
+    "intro2": "Fluent in JavaScript libraries such as React.js & Next.js, popular frameworks including Material-UI & Bootstrap, and Redux for state management. Proficient in core web technologies, including JavaScript, Typescript, HTML5, CSS, and DOM."
   },
   "about": {
     "title1": "Web Design",
@@ -76,6 +76,14 @@
       "status": "Full Time",
       "companyName": "Sparrowhawk Systems",
       "workInfo": "Integrating TRPC and Prisma in a Next.js environment, and actively gaining hands-on experience by creating and modifying Prisma models. Additionally, collaborating on the modification and expansion of the existing frontend ( using React, Next.js and MaterialUI), incorporating new features as required."
+    },
+    {
+      "id": 5,
+      "position": "Senior React Developer",
+      "duration": "Nov 2024 - current",
+      "status": "Full Time",
+      "companyName": "Tek Tree LLC",
+      "workInfo": "Currently working as a Senior React Developer at Tek Tree LLC"
     }
   ],
   "projects_url": {

@@ -9,7 +9,7 @@ import "./homepage.style.css";
 const description = ` I specialize in translating designs into responsive, user-friendly websites. Let's collaborate and turn your digital vision into an immersive online experience!`;
 
 export const Homepage = () => {
-  const titles = ["Frontend Developer", "Web Designer", "Coder"];
+  const titles = ["Full Stack Dev (MERN)", "Web Designer", "Coder"];
 
   return (
     <MainContainer className="homepage" noBorder={true}>
